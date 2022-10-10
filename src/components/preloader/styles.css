@@ -10,13 +10,21 @@
   src: url("/src/assets/fonts/Gravedigger-8BOZ.ttf");
 }
 
+@font-face {
+  font-family: "paladins";
+  src: url("/src/assets/fonts/paladins.ttf");
+}
+@font-face {
+  font-family: "polaris";
+  src: url("/src/assets/fonts/Polaris.otf");
+}
+
 .image {
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   overflow: hidden;
-
 }
 
 .imageImg {
@@ -450,13 +458,13 @@
   stroke-miterlimit: 10;
 }
 
-.home-bg{
+.home-bg {
   background: url(/src/assets/backgroudnsu.png);
   height: 100vh;
   width: 100vw;
   background-size: cover;
 }
-.home-bg-copy{
+.home-bg-copy {
   position: fixed;
   top: 0;
   background: url(/src/assets/background.jpg);
@@ -465,29 +473,35 @@
   z-index: -1;
   background-size: cover;
 }
-.home-wrapper{
+.home-wrapper {
   height: inherit;
   width: inherit;
   padding-top: 300px;
   text-align: center;
 }
-.home-main-title{
+.home-main-title {
   font-size: 60px;
   text-transform: uppercase;
   font-family: "grave";
 }
 .linear-wipe {
   text-align: center;
-  
-  background: linear-gradient(to right, #b2daf7 10%, #58e9f9 30%, #1f5cd4 60%, #b2daf7 80%);
+
+  background: linear-gradient(
+    to right,
+    #b2daf7 10%,
+    #58e9f9 30%,
+    #1f5cd4 60%,
+    #b2daf7 80%
+  );
   background-size: 200% auto;
-  
+
   color: #000;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
+
   animation: shine 3s linear infinite;
 }
 @keyframes shine {

@@ -39,7 +39,7 @@ const PreLoader = () => {
       imageImg.current,
       {
         top: "0vh",
-        opacity: "scale(0.5)",
+        // opacity: "scale(0.5)",
         ease: "power4.easeInOut",
         zIndex: 30,
         scale: 4,
@@ -77,8 +77,8 @@ const PreLoader = () => {
     animation.to(
       loaderRef.current,
       {
-        // opacity: 0,
-        // display: "none",
+        opacity: 0,
+        display: "none",
         duration: 3.5,
       },
       "-=9"

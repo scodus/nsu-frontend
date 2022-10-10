@@ -1,21 +1,18 @@
 import PreLoader from "../../components/preloader";
+import HomepageLayout from "../../layouts/HomepageLayout";
+import { Header } from "./styles";
 
 const HomePage = () => {
   return (
     <div>
-      <PreLoader />
-      <div className="home-bg-copy">
-        <div className="home-wrapper">
-          <div className="home-main-title linear-wipe">Hackathon</div>
-        </div>
-      </div>
-      <div className="home-bg">
-        <div className="home-wrapper">
-          <div className="home-main-title linear-wipe">Hackathon</div>
-        </div>
-      </div>
+      {/* <PreLoader /> */}
+      <Header></Header>
     </div>
   );
 };
 
-export default HomePage;
+const HomePageWithNavbar = () => {
+  return <HomepageLayout render={() => <HomePage />} />;
+};
+
+export default HomePageWithNavbar;
