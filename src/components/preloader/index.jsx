@@ -65,7 +65,8 @@ const PreLoader = () => {
     animation.to(
       nsuTechFest.current,
       {
-        transform: "translateY(-450px)",
+        transform: "translateY(-250px) scale(0.5)",
+
         duration: 3,
         color: "#54aedc",
       },
@@ -76,8 +77,8 @@ const PreLoader = () => {
     animation.to(
       loaderRef.current,
       {
-        opacity: 0,
-        display: "none",
+        // opacity: 0,
+        // display: "none",
         duration: 3.5,
       },
       "-=9"
@@ -287,7 +288,7 @@ const PreLoader = () => {
         </div>
       </div>
       <div className="nsu-tech-fest" ref={nsuTechFest}>
-        NSU TechFest
+        NSU TechFest 2.0
       </div>
       <img
         className="imageImg"
