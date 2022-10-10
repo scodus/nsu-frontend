@@ -5,7 +5,7 @@ import { Header } from "./styles";
 const HomePage = () => {
   return (
     <div>
-      {/* <PreLoader /> */}
+      <PreLoader />
       <Header></Header>
     </div>
   );
