@@ -2,27 +2,42 @@ import {
   NavbarCenterLeft,
   NavbarMiddle,
   NavbarParent,
-  CenterTitle,
   NavbarCenterRight,
   ContactBtn,
+  NavLink,
+  NavCenterLink,
+  Icon,
 } from "./styles";
 import { ReactComponent as MenuIcon } from "./../../assets/hamburger.svg";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const { pathname } = useLocation();
+
+  // use this to render navbar active link
+  const renderActive = (item) => {
+    return pathname.slice(1) === item ? "active" : "deactive";
+  };
+  // --------------------------
+
   return (
     <NavbarParent>
-      <div>
+      <Icon>
         <MenuIcon />
-      </div>
+      </Icon>
       <NavbarMiddle>
         <NavbarCenterLeft>
-          <div>hackathon</div>
-          <div>startup ideas</div>
+          <NavLink active={renderActive("hackathon")} to={"/hackathon"}>
+            hackathon
+          </NavLink>
+          <NavLink to="#">startup ideas</NavLink>
         </NavbarCenterLeft>
-        <CenterTitle>NSU</CenterTitle>
+        <NavCenterLink active={renderActive("")} to="/">
+          NSU
+        </NavCenterLink>
         <NavbarCenterRight>
-          <div>exhibition</div>
-          <div>robo wars</div>
+          <NavLink to="#">exhibition</NavLink>
+          <NavLink to="#">robo wars</NavLink>
         </NavbarCenterRight>
       </NavbarMiddle>
       <ContactBtn>Contact Us</ContactBtn>

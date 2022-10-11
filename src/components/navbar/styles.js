@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import btn from "./../../assets/contact-btn.png";
+import { Link } from "react-router-dom";
 
 const NavbarParent = styled.div`
   width: 100vw;
@@ -11,7 +12,9 @@ const NavbarParent = styled.div`
   padding: 25px 100px;
   color: #fff;
 `;
-
+const Icon = styled.div`
+  cursor: pointer;
+`;
 const NavbarMiddle = styled.div`
   display: flex;
   justify-content: space-between;
@@ -37,22 +40,6 @@ const NavbarCenterRight = styled.div`
   display: flex;
   width: 33rem;
   justify-content: space-around;
-
-  > * {
-    /* margin: 0 10px; */
-    font-family: "polaris";
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-`;
-
-const CenterTitle = styled.div`
-  margin: 0 4.5rem;
-  font-family: "paladins";
-  letter-spacing: 0.01em;
-  font-size: 16px;
-  font-weight: 400;
 `;
 
 const ContactBtn = styled.div`
@@ -69,12 +56,31 @@ const ContactBtn = styled.div`
   font-weight: 400;
   text-transform: uppercase;
 `;
+const NavLink = styled(Link)`
+  text-decoration: none;
+  color: ${(props) => (props.active === "active" ? "#1FF8D1" : "#fff")};
+  font-family: "polaris";
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+`;
 
+const NavCenterLink = styled(Link)`
+  text-decoration: none;
+  margin: 0 4.5rem;
+  font-family: "paladins";
+  letter-spacing: 0.01em;
+  font-size: 16px;
+  font-weight: 400;
+  color: ${(props) => (props.active === "active" ? "#1FF8D1" : "#fff")};
+`;
 export {
   NavbarParent,
   NavbarMiddle,
   NavbarCenterLeft,
   NavbarCenterRight,
-  CenterTitle,
+  NavCenterLink,
   ContactBtn,
+  NavLink,
+  Icon,
 };

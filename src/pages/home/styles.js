@@ -8,6 +8,10 @@ const centerElement = css`
   justify-content: center;
 `;
 
+const HomeParent = styled.div`
+  background: linear-gradient(180deg, #000032 0%, #171720 100%);
+`;
+
 const Header = styled.div`
   width: 100vw;
   height: 90vh;
@@ -19,7 +23,7 @@ const Header = styled.div`
 
 const GuestArea = styled.div`
   width: 100vw;
-  background-color: #0d0d28;
+  /* background-color: #0d0d28; */
   color: #fff;
   padding-top: 6.8rem;
   position: relative;
@@ -27,7 +31,7 @@ const GuestArea = styled.div`
 
 const GuestAreaTitle = styled.div`
   position: absolute;
-  top: 0;
+  top: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -101,7 +105,7 @@ const StyledImage = styled.img`
 
 const EventArea = styled.div`
   width: 100vw;
-  background-color: #0d0d28;
+  /* background-color: #0d0d28; */
   display: flex;
   justify-content: space-between;
   padding: 11rem 11rem 5rem 11rem;
@@ -240,9 +244,32 @@ const DateTextItem = styled.div`
   margin-top: 10px;
 `;
 
+const SponsorParent = styled.div`
+  ${centerElement}
+  width: 100vw;
+  height: 25rem;
+  color: #fff;
+`;
+
+const SponsorImage = styled.img`
+  margin: 3rem;
+`;
+
+const Footer = styled.div`
+  padding: 2rem 16rem;
+  font-family: "polaris";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #a9a9a9;
+  border-top: 1px solid #757171;
+`;
+
 export {
   Header,
   GuestArea,
+  HomeParent,
   GuestAreaTitle,
   SpaceBetweenFlex,
   Hexagon,
@@ -267,4 +294,7 @@ export {
   DateText,
   DateTextHeading,
   DateTextItem,
+  SponsorParent,
+  SponsorImage,
+  Footer,
 };

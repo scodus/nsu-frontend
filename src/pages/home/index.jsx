@@ -1,29 +1,30 @@
 import PreLoader from "../../components/preloader";
 import HomepageLayout from "../../layouts/HomepageLayout";
-import { Header } from "./styles";
+import { Footer, Header, HomeParent } from "./styles";
 
 import GuestSection from "./GuestSection";
 import EventSection from "./EventSection";
 import StartingDate from "./StartingDate";
+import SponsorSection from "./SponsorSection";
 
 const HomePage = () => {
   return (
-    <div>
-      {/* <PreLoader /> */}
+    <HomeParent>
+      <PreLoader />
+      {/* Hero Section */}
       <Header />
       {/* this is guest area */}
       <GuestSection />
       {/* this is all our events section */}
       <EventSection />
-
       {/* start end text in here */}
       <StartingDate />
-    </div>
+      {/* sponsor area here */}
+      <SponsorSection />
+
+      <Footer>privacy and policy 2022</Footer>
+    </HomeParent>
   );
 };
 
-const HomePageWithNavbar = () => {
-  return <HomepageLayout render={() => <HomePage />} />;
-};
-
-export default HomePageWithNavbar;
+export default HomePage;
