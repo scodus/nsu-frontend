@@ -17,23 +17,25 @@ const NavbarMiddle = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 75rem;
+  transform: translateX(4rem);
 `;
 
 const NavbarCenterLeft = styled.div`
   display: flex;
-  width: 33rem;
+  width: 30rem;
   justify-content: space-between;
 
   > * {
     /* margin: 0 10px; */
     font-family: "polaris";
+    text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 400;
   }
 `;
 const NavbarCenterRight = styled.div`
   display: flex;
-  width: 35rem;
+  width: 33rem;
   justify-content: space-around;
 
   > * {
@@ -41,11 +43,12 @@ const NavbarCenterRight = styled.div`
     font-family: "polaris";
     font-size: 1.2rem;
     font-weight: 400;
+    text-transform: uppercase;
   }
 `;
 
 const CenterTitle = styled.div`
-  margin: 0 6rem;
+  margin: 0 4.5rem;
   font-family: "paladins";
   letter-spacing: 0.01em;
   font-size: 16px;
@@ -64,6 +67,7 @@ const ContactBtn = styled.div`
   font-family: "polaris";
   font-size: 1.2rem;
   font-weight: 400;
+  text-transform: uppercase;
 `;
 
 export {
