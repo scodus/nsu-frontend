@@ -12,9 +12,25 @@ import { useEffect } from "react";
 const HomePage = () => {
   const { pathname } = useLocation();
 
+  // useEffect(() => {
+  //   // const unloadCallback = (event) => {
+  //   //   event.preventDefault();
+  //   //   // alert("reload");
+  //   //   return "";
+  //   // };
+
+  //   // window.addEventListener("beforeunload", unloadCallback);
+  //   // return () => window.removeEventListener("beforeunload", unloadCallback);
+  //   window.onbeforeunload = function () {
+  //     console.log("hiiiiiiii");
+  //     alert("hi");
+  //     return "";
+  //   };
+  // }, []);
+
   return (
     <HomeParent>
-      {<PreLoader />}
+      <PreLoader />
       {/* Hero Section */}
       <Header />
       {/* this is guest area */}
