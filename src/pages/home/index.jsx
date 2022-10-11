@@ -6,11 +6,15 @@ import GuestSection from "./GuestSection";
 import EventSection from "./EventSection";
 import StartingDate from "./StartingDate";
 import SponsorSection from "./SponsorSection";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const HomePage = () => {
+  const { pathname } = useLocation();
+
   return (
     <HomeParent>
-      <PreLoader />
+      {<PreLoader />}
       {/* Hero Section */}
       <Header />
       {/* this is guest area */}
