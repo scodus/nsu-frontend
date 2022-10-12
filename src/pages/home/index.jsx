@@ -1,36 +1,14 @@
 import PreLoader from "../../components/preloader";
-import HomepageLayout from "../../layouts/HomepageLayout";
 import { Footer, Header, HomeParent } from "./styles";
-
 import GuestSection from "./GuestSection";
 import EventSection from "./EventSection";
 import StartingDate from "./StartingDate";
 import SponsorSection from "./SponsorSection";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 
 const HomePage = () => {
-  const { pathname } = useLocation();
-
-  // useEffect(() => {
-  //   // const unloadCallback = (event) => {
-  //   //   event.preventDefault();
-  //   //   // alert("reload");
-  //   //   return "";
-  //   // };
-
-  //   // window.addEventListener("beforeunload", unloadCallback);
-  //   // return () => window.removeEventListener("beforeunload", unloadCallback);
-  //   window.onbeforeunload = function () {
-  //     console.log("hiiiiiiii");
-  //     alert("hi");
-  //     return "";
-  //   };
-  // }, []);
-
   return (
     <HomeParent>
-      <PreLoader />
+      {/* <PreLoader /> */}
       {/* Hero Section */}
       <Header />
       {/* this is guest area */}
