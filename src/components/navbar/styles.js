@@ -3,7 +3,7 @@ import btn from "./../../assets/contact-btn.png";
 import { Link } from "react-router-dom";
 
 const NavbarParent = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 40px;
   position: absolute;
   display: flex;

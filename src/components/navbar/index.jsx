@@ -46,7 +46,7 @@ const Navbar = () => {
           </NavLink>
         </NavbarCenterRight>
       </NavbarMiddle>
-      <ContactBtn>Contact Us</ContactBtn>
+      <ContactBtn><NavLink active={renderActive("contact")} to={"/contact"}>Contact Us</NavLink></ContactBtn>
     </NavbarParent>
   );
 };

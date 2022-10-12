@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 
 @font-face {
   font-family: "comming-soon";
@@ -461,7 +462,7 @@
 .home-bg {
   background: url(/src/assets/backgroudnsu.png);
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
 }
 .home-bg-copy {
@@ -469,7 +470,7 @@
   top: 0;
   background: url(/src/assets/background.jpg);
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   z-index: -1;
   background-size: cover;
 }

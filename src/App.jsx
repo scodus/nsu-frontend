@@ -7,6 +7,7 @@ import Exhibition from "./pages/exhibition";
 import Robowars from "./pages/robowars";
 
 import HomepageLayout from "./layouts/HomepageLayout";
+import Contact from "./pages/contact";
 
 function App() {
   return (
@@ -20,10 +21,14 @@ function App() {
           <Route path="/startup" element={<Startup />} />
           <Route path="/exhibition" element={<Exhibition />} />
           <Route path="/robowars" element={<Robowars />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/other" element={<OtherPage />} />
+          
           {/* end of pages  */}
         </Route>
       </Routes>
+
+
     </div>
   );
 }
