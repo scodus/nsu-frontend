@@ -34,7 +34,11 @@ const Navbar = () => {
             startup ideas
           </NavLink>
         </NavbarCenterLeft>
-        <NavCenterLink active={renderActive("")} to="/">
+        <NavCenterLink
+          active={renderActive("")}
+          to="/"
+          state={{ clicked: true }}
+        >
           NSU
         </NavCenterLink>
         <NavbarCenterRight>

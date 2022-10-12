@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route, Outlet, useNavigate } from "react-router-dom";
 import HomePage from "./pages/home";
 import OtherPage from "./pages/utils";
 import Hackathon from "./pages/hackathon";
@@ -7,8 +7,13 @@ import Exhibition from "./pages/exhibition";
 import Robowars from "./pages/robowars";
 
 import HomepageLayout from "./layouts/HomepageLayout";
+import { useEffect } from "react";
 
 function App() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    navigate({ state: null });
+  }, []);
   return (
     <div>
       <Routes>
