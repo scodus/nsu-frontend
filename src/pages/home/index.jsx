@@ -4,8 +4,13 @@ import GuestSection from "./GuestSection";
 import EventSection from "./EventSection";
 import StartingDate from "./StartingDate";
 import SponsorSection from "./SponsorSection";
+import { useEffect } from "react";
 
 const HomePage = () => {
+  useEffect(() => {
+    let data = window.performance.getEntriesByType("navigation");
+    console.log(data, "data");
+  }, []);
   return (
     <HomeParent>
       {/* <PreLoader /> */}

@@ -30,14 +30,20 @@ const Navbar = () => {
           <NavLink active={renderActive("hackathon")} to={"/hackathon"}>
             hackathon
           </NavLink>
-          <NavLink to="#">startup ideas</NavLink>
+          <NavLink active={renderActive("startup")} to={"/startup"}>
+            startup ideas
+          </NavLink>
         </NavbarCenterLeft>
         <NavCenterLink active={renderActive("")} to="/">
           NSU
         </NavCenterLink>
         <NavbarCenterRight>
-          <NavLink to="#">exhibition</NavLink>
-          <NavLink to="#">robo wars</NavLink>
+          <NavLink active={renderActive("exhibition")} to={"/exhibition"}>
+            exhibition
+          </NavLink>
+          <NavLink active={renderActive("robowars")} to={"/robowars"}>
+            robo wars
+          </NavLink>
         </NavbarCenterRight>
       </NavbarMiddle>
       <ContactBtn>Contact Us</ContactBtn>
