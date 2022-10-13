@@ -1,0 +1,253 @@
+.big-container {
+    padding: 14.4rem 10.7rem;
+    background: linear-gradient(180deg, #092a4cd9 0%, #092a4cfc 30%, #171720 100%);
+}
+
+.small-container {
+    padding: 8.2rem 10.7rem;
+}
+
+.extra-padding-container {
+    padding: 0rem 12.9rem;
+}
+
+.extra-padding-right-container{
+    padding-right : 19.9rem;
+}
+
+.contact-form-container {
+    padding: 3rem 0;
+}
+
+/* fonts */
+
+p {
+    font-size: 1.8rem;
+    color: #D9D9D9;
+    font-family: 'Montserrat Alternates';
+}
+
+.font-size-20{
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #DAE0D1;
+    font-family: 'polaris';
+    font-weight: 400;
+    text-shadow: 0px 11px 23px rgba(12, 255, 240, 0.25);
+    ;
+}
+.h1-small{
+    font-size : 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "polaris";
+    text-shadow: 0px 11px 23px rgba(12, 255, 240, 0.25);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: "polaris";
+    color: white;
+    font-weight: 400;
+
+}
+
+ul li {
+    font-family: 'Montserrat Alternates';
+    padding-bottom: 1.5rem;
+    font-size: 1.9rem;
+    list-style-position: inside;
+}
+
+label {
+    color: white;
+    font-family: "polaris";
+    line-height: 2.2rem;
+    font-weight: 400;
+    font-size: 1rem;
+    display: block;
+
+}
+
+
+/* fonts heights and structure */
+.p-height {
+    line-height: 3.5rem;
+}
+
+.h1-height {
+    padding-bottom: 3.1rem;
+}
+
+.small-height {
+    line-height: 2.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+
+
+/* color */
+.color-white {
+    color: white;
+}
+
+.color-brown{
+    color : #D9D9D9;
+}
+
+.color-gold {
+    color: #DAE0D1;
+}
+
+.ul-color-white {
+    color: white;
+    font-size: 2rem;
+}
+
+.opacity-color-white {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+/* border */
+
+.border-white {
+    border: 3px solid rgba(255, 255, 255, 0.72);
+    border-radius: 8px;
+}
+
+
+/* form */
+
+.form-inputs {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2,auto);
+    gap: 2rem;
+}
+
+.full-width{
+    grid-column: 1 / 3;
+}
+
+.form-inputs input {
+    border: 1px solid rgba(18, 17, 39, 0.12);
+    border-radius: 5px;
+    padding: 1rem 1.6rem ;
+    gap: 1rem;
+    width: 28rem;
+}
+
+.form-inputs textarea {
+    border-radius: 5px;
+    border: 1px solid rgba(18, 17, 39, 0.12);
+    width: 100%;
+}
+
+.form_inputs input::placeholder { 
+    font-family: 'Montserrat Alternates';
+}
+
+form button {
+    background : #444BD3;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-family: 'polaris';
+    font-size: 1rem;
+    text-align: right;
+}
+
+
+.robo-wars-bg{
+    /* background-image: url("../rectangle.svg"),linear-gradient(rgba(23, 86, 65, 1),rgba(23, 86, 65, 1));;
+    background-blend-mode: overlay; */
+    background-image: url(/src/assets/rectangle.svg),linear-gradient(rgb(19 25 37),rgb(12 43 77));
+    background-blend-mode: overlay;
+}
+
+.hackaton-bg{
+    background-image: linear-gradient(rgb(39 40 101 / 94%),rgb(13 55 99));
+    /* background-image: url("../greenRectangle.svg"),linear-gradient(rgba(23, 86, 65, 1),rgba(23, 86, 65, 1));; */
+    background-blend-mode: overlay;
+}
+
+.start-up-bg{
+    background-image: url(/src/assets/Group.svg),linear-gradient(rgb(36 71 114),rgb(4 48 92));
+    /* background-image: url("../Group.svg"),linear-gradient(rgba(73, 106, 208, 1),rgba(73, 106, 208, 1));; */
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.exhibition-bg{
+    background-image: url("../bluerectangle.png"),linear-gradient(rgba(23, 86, 65, 1),rgba(23, 86, 65, 1));;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-title p{
+    font-size: 1.5rem;
+}
+
+
+/* Contact Us Page */
+.contact-form-page-container{
+    display: flex;
+    padding: 4.6rem;
+    padding-top: 10rem;
+    /* margin: 4.6rem; */
+    box-shadow: 0px 4px 84px rgba(255, 255, 255, 0.25);
+}
+
+.contact-left{
+    width: 50%;
+}
+
+.contact-right{
+    width: 50%;
+    background: white;
+}
+
+.contact-right form {
+    width: 100%;
+    padding: 1rem 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-right form label {
+    color: black;
+}
+
+.contact-right form .form--input{
+    width: 80%;
+}
+
+
+.contact-right form input, textarea{
+    width: 70%;
+    padding: 1rem 0.9rem;
+    border-radius: 5px;
+    outline: none;
+}

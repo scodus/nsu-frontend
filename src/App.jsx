@@ -8,6 +8,7 @@ import Robowars from "./pages/robowars";
 
 import HomepageLayout from "./layouts/HomepageLayout";
 import { useEffect } from "react";
+import Contact from "./pages/contact";
 
 function App() {
   const navigate = useNavigate();
@@ -25,7 +26,9 @@ function App() {
           <Route path="/startup" element={<Startup />} />
           <Route path="/exhibition" element={<Exhibition />} />
           <Route path="/robowars" element={<Robowars />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/other" element={<OtherPage />} />
+
           {/* end of pages  */}
         </Route>
       </Routes>
