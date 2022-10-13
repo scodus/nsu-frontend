@@ -1,15 +1,16 @@
 import React from 'react'
+import ContactSubmitBtn from '../../assets/contactsubmitbtn.svg'
 
 function Contact() {
   return (
     <>
-      <div style={{ background: "#131324", height: "100vh" }} className="other-container">
+      <div style={{ background: "#131324" }} className="other-body-container">
         <div className="contact-form-page-container">
           <div className="contact-left">
-            <h1>WE'D LOVE TO HEAR FROM YOU</h1>
+            <h1 className='h1-small color-white'>WE'D LOVE TO HEAR FROM YOU</h1>
           </div>
           <div className="contact-right">
-            <h2>CONTACT US</h2>
+            <h2 className='color-grayscale small-height-padding'>CONTACT US</h2>
 
             <form action="">
               <div className="form--input">
@@ -31,7 +32,11 @@ function Contact() {
                 <label htmlFor="message">MESSAGE</label>
                 <textarea name="" id="" cols="30"></textarea>
               </div>
-              <button>Send</button>
+              <div className="contact-form-button">
+                <button>
+                  <img src={ContactSubmitBtn} alt="" />
+                </button>
+              </div>
             </form>
           </div>
         </div>

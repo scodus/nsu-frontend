@@ -66,12 +66,8 @@ const Hackathon = () => {
                 <div className="btn full-width text-right">
                   <button>Send Message</button>
                 </div>
-
               </div>
-
-
             </form>
-
           </div>
         </div>
 
