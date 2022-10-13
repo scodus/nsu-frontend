@@ -460,20 +460,48 @@
 }
 
 .home-bg {
-  background: url(/src/assets/backgroudnsu.png);
   height: 100vh;
   width: 100%;
   background-size: cover;
 }
+
+
 .home-bg-copy {
   position: fixed;
   top: 0;
-  background: url(/src/assets/background.jpg);
+  /* background: url(/src/assets/background.jpg); */
   height: 100vh;
   width: 100%;
   z-index: -1;
   background-size: cover;
 }
+
+.hackathon-bg-copy{
+  background: url(/src/assets/Hackathon.svg);
+  background-size: cover;
+
+}
+
+.startup-bg-copy{
+  background: url(/src/assets/startupIdeas.svg);
+  background-size: cover;
+
+}
+
+.exhibition-bg-copy{
+  background: url(/src/assets/Exhibition.svg);
+  background-size: cover;
+}
+
+.robo-wars-bg-copy{
+  background: url(/src/assets/RoboWars.svg);
+  background-size: cover;
+
+
+}
+
+
+
 .home-wrapper {
   height: inherit;
   width: inherit;

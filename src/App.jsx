@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route, Outlet, useNavigate } from "react-router-dom";
 import HomePage from "./pages/home";
 import OtherPage from "./pages/utils";
 import Hackathon from "./pages/hackathon";
@@ -7,10 +7,17 @@ import Exhibition from "./pages/exhibition";
 import Robowars from "./pages/robowars";
 
 import HomepageLayout from "./layouts/HomepageLayout";
+import { useEffect } from "react";
 import Contact from "./pages/contact";
 import Teams from "./components/teams/Teams";
+import PanelList from "./components/panellist/PanelList";
+import Sponsers from "./pages/sponsers";
 
 function App() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    navigate({ state: null });
+  }, []);
   return (
     <div>
       <Routes>
@@ -24,14 +31,16 @@ function App() {
           <Route path="/robowars" element={<Robowars />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/teams" element={<Teams />} />
+          <Route path="/panel" element={<PanelList />} />
+          <Route path="/sponsers" element={ <Sponsers /> } />
+          
+
 
           <Route path="/other" element={<OtherPage />} />
-          
+
           {/* end of pages  */}
         </Route>
       </Routes>
-
-
     </div>
   );
 }
