@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import background from "./../../assets/homepageHero.png";
 import DoubleButton from "./../../assets/events/double-btn.svg";
+import newBackground from "./../../assets/backgroudnsu.jpg";
 
 const centerElement = css`
   display: flex;
@@ -16,9 +17,10 @@ const Header = styled.div`
   width: 100%;
   height: 90vh;
   object-fit: cover;
-  background: url(${background});
+  background: url(${newBackground});
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  // background-size: 100% 100%;
+  background-size : cover;
 `;
 
 const GuestArea = styled.div`

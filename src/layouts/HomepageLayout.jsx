@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/navbar";
 import OtherNav from "../components/otherNavBar/OtherNav";
+import '../assets/css/mobile.css';
 
 const HomepageLayout = ({ render }) => {
 

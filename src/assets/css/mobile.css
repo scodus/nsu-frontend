@@ -1,0 +1,86 @@
+@media only screen and (max-width: 759px) {
+
+    html{
+        font-size: 44.5% !important;
+    }
+
+
+    .big-container {
+        padding: 14.4rem 4rem;
+    }
+
+    .extra-padding-container {
+        padding: 0rem;
+    }
+
+    .small-container {
+        padding: 8.2rem 4rem;
+
+    }
+
+    .other-body-container{
+        padding: 10rem 4rem !important;
+    }
+
+    .extra-padding-right-container {
+        padding-right: 3rem;
+    }
+
+    /* form contacts section of all pages */
+
+    .form-inputs {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .form-inputs .form--input input,
+    .form-inputs .form--input textarea {
+        width: 90%;
+    }
+
+    .form--input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form-inputs .btn {
+        text-align: center;
+    }
+
+    .full-width {
+        grid-column: 1;
+    }
+
+    /* for contact pages */
+    .contact-form-page-container {
+        flex-direction: column;
+    }
+
+    .contact-left {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .contact-right {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .contact-form-button {
+        text-align: center;
+    }
+
+
+    /* for events */
+    .event-container .event-items {
+        flex-direction: column !important;
+    }
+
+    /* panel */
+    .team-member-title {
+        padding: 0;
+    }
+
+
+}

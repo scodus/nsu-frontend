@@ -110,6 +110,16 @@ label {
 
 }
 
+.start-up-h1{
+    font-size: 6rem;
+    text-align: left;
+    margin-left: 10.7rem;
+}
+
+.wrapper-management-200{
+    padding-top: 200px;
+}
+
 
 /* fonts heights and structure */
 .p-height {

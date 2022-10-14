@@ -10,6 +10,7 @@ function Contact() {
   const [subject, setSubject] = useState("");
 
   const [message, setMessage] = useState("");
+  const [isSuccess, setSuccess] = useState(false);
 
   const SubmitHandler = (e) => {
     e.preventDefault();
@@ -23,6 +24,15 @@ function Contact() {
     axios.post("https://nsu-project-dbc22-default-rtdb.firebaseio.com/data.json", data)
       .then(res => {
         console.log("Res is ", res)
+        if (res.status === 200){
+          setName("");
+          setEmail("");
+          setPhone("");
+          setMessage("");
+          setSubject("");
+          setSuccess(true);
+          const setTimeInterval = setTimeout(() => {setSuccess(false)},3000)
+        }
       })
       .catch(err => console.log("err is ", err))
 
@@ -41,24 +51,26 @@ function Contact() {
             <form action="" onSubmit={SubmitHandler}>
               <div className="form--input">
                 <label htmlFor="name">YOUR NAME</label>
-                <input type="text" name='name' placeholder='Esther Howard' required onChange={(e) => setName(e.target.value)} />
+                <input type="text" value={name} name='name' placeholder='Esther Howard' required onChange={(e) => setName(e.target.value)} />
               </div>
 
               <div className="form--input">
                 <label htmlFor="phone">EMAIL ADDRESS</label>
-                <input type="text" name='phone' placeholder='jackson.legend@gmail.com' required
+                <input type="text" value={email} name='phone' placeholder='jackson.legend@gmail.com' required
                   onChange={(e) => setEmail(e.target.value)} />
               </div>
 
               <div className="form--input">
                 <label htmlFor="name">PHONE NUMBER</label>
-                <input type="number" name='name' placeholder='98186574635' required onChange={(e) => setPhone(e.target.value)} />
+                <input type="number" value={phone} name='name' placeholder='98186574635' required onChange={(e) => setPhone(e.target.value)} />
               </div>
 
               <div className="form--input full-width">
                 <label htmlFor="message">MESSAGE</label>
-                <textarea name="" id="" cols="30" placeholder='Type here' required onChange={(e) => setMessage(e.target.value)}></textarea>
+                <textarea name="" value={message} id="" cols="30" placeholder='Type here' required onChange={(e) => setMessage(e.target.value)}></textarea>
               </div>
+              { isSuccess && <p style={{paddingBottom : '1rem',color:'green',fontSize : '1.3rem'}}>Thank You for Contacting Us</p> }
+              
               <div className="contact-form-button">
                 <button>
                   <ContactBtn >SEND</ContactBtn>

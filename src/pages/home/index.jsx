@@ -14,6 +14,8 @@ const HomePage = () => {
       {!location?.state?.clicked && <PreLoader />}
       {/* Hero Section */}
       <Header />
+        <div className="home-main-title linear-wipe linear-wipe-home-page">NSU TECHFEST</div>
+
       {/* this is guest area */}
       <GuestSection />
       {/* this is all our events section */}
