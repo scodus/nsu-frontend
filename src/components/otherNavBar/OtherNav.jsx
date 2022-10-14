@@ -3,8 +3,6 @@ import { NavLink } from 'react-router-dom'
 import Hamburger from '../../assets/hamburger.svg'
 
 
-
-
 function OtherNav({ isBurger, setBurger }) {
 
   const mainBurgerStyle = {
@@ -25,11 +23,11 @@ function OtherNav({ isBurger, setBurger }) {
     background: "linear-gradient(133.63deg, #6386FF -6.69%, #533289 108.49%)",
     transformOrigin: "center left",
     transition: "200ms ease-in",
-    zIndex : "1000000"
+    zIndex: "1000000"
   }
 
   let closeBurgerStyles = {
-    width : "15%"
+    width: "15%"
   }
 
   let mainburgerTransformCheck = isBurger ? { left: "0" } : { left: "-100%" }
@@ -37,8 +35,17 @@ function OtherNav({ isBurger, setBurger }) {
     setBurger(false)
   }
 
+
+  let activeStyle = {
+    // textDecoration: "underline",
+    color: "#1FF8D1"
+  };
+
+  let activeClassName = "underline";
+
+
   return (
-    <div className="all-nav-burger-container"style={{...mainBurgerStyle,...mainburgerTransformCheck}}>
+    <div className="all-nav-burger-container" style={{ ...mainBurgerStyle, ...mainburgerTransformCheck }}>
       <div style={{ ...burgerStyles }}>
 
         <div className="nav-burger-container">
@@ -53,16 +60,24 @@ function OtherNav({ isBurger, setBurger }) {
             <div className="nav-burger-items">
               <ul>
                 <li onClick={HamBurgerHandler}>
-                  <NavLink >  ALL EVENTS</NavLink>
+                  <NavLink to="/events" style={({ isActive }) =>
+                    isActive ? activeStyle : undefined
+                  } >  ALL EVENTS</NavLink>
                 </li>
                 <li onClick={HamBurgerHandler}>
-                  <NavLink to="/panel" >  PANEL LIST</NavLink>
+                  <NavLink to="/panel" style={({ isActive }) =>
+                    isActive ? activeStyle : undefined
+                  } >  PANEL LIST</NavLink>
                 </li>
                 <li onClick={HamBurgerHandler}>
-                  <NavLink to="/teams" >TEAM MEMBERS </NavLink>
+                  <NavLink to="/teams" style={({ isActive }) =>
+                    isActive ? activeStyle : undefined
+                  } >TEAM MEMBERS </NavLink>
                 </li>
                 <li onClick={HamBurgerHandler}>
-                  <NavLink to="/sponsers" >  SPONSERS</NavLink>
+                  <NavLink to="/sponsers" style={({ isActive }) =>
+                    isActive ? activeStyle : undefined
+                  }>  SPONSERS</NavLink>
                 </li>
               </ul>
             </div>

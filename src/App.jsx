@@ -12,6 +12,7 @@ import Contact from "./pages/contact";
 import Teams from "./components/teams/Teams";
 import PanelList from "./components/panellist/PanelList";
 import Sponsers from "./pages/sponsers";
+import EventPage from "./pages/events";
 
 function App() {
   const navigate = useNavigate();
@@ -33,6 +34,7 @@ function App() {
           <Route path="/teams" element={<Teams />} />
           <Route path="/panel" element={<PanelList />} />
           <Route path="/sponsers" element={ <Sponsers /> } />
+          <Route path="/events" element = { <EventPage />  } />
           
 
 

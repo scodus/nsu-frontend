@@ -13,7 +13,7 @@ const HomeParent = styled.div`
 `;
 
 const Header = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 90vh;
   object-fit: cover;
   background: url(${background});
@@ -22,7 +22,7 @@ const Header = styled.div`
 `;
 
 const GuestArea = styled.div`
-  width: 100vw;
+  width: 100%;
   /* background-color: #0d0d28; */
   color: #fff;
   padding-top: 6.8rem;
@@ -104,7 +104,7 @@ const StyledImage = styled.img`
 `;
 
 const EventArea = styled.div`
-  width: 100vw;
+  width: 100%;
   /* background-color: #0d0d28; */
   display: flex;
   justify-content: space-between;
@@ -115,7 +115,7 @@ const EventLeft = styled.div`
   color: #fff;
   display: flex;
   flex-direction: column;
-  max-width: 40vw;
+  max-width: 40%;
 `;
 
 const EventRight = styled.div`
@@ -190,10 +190,11 @@ const DateImageParent = styled.div`
   position: relative;
   /* height: 500px;
   width: 100vw; */
-`;
+`; 
 
 const DateImageItem = styled.img`
   object-fit: cover;
+  width: 100%;
 `;
 const DateImageOverlay = styled.div`
   ${centerElement}
@@ -229,7 +230,7 @@ const DateTextHeading = styled.div`
   color: #fff;
   margin-bottom: 1.6rem;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 `;
 
 const DateTextItem = styled.div`
@@ -246,7 +247,7 @@ const DateTextItem = styled.div`
 
 const SponsorParent = styled.div`
   ${centerElement}
-  width: 100vw;
+  width: 100%;
   height: 25rem;
   color: #fff;
 `;

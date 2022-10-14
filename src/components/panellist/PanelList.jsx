@@ -1,4 +1,6 @@
 import React from 'react'
+import { Hexagon, HexagonParent, HexagonText, HexagonWrapper, StyledImage } from '../../pages/home/styles'
+import Post from '../../assets/postmalone.jpg'
 
 const bodyContainer = {
     background: "linear-gradient(180deg, #000032 0%, #171720 100%)",
@@ -15,10 +17,72 @@ function PanelList() {
                 </div>
             </div>
 
-            <div className="team-member-information">
-                <div className="team-member-informations">
-                    <div className="info-images panel-images">
-                        <img src="https://picsum.photos/500/500" alt="" />
+            <div className="panel-information">
+                <div className="panel-informations">
+                    <div className="panel-images">
+                        <Hexagon>
+                            <StyledImage src={Post} />
+                        </Hexagon>
+                    </div>
+                    <div className="info-user-details">
+                        <h3 className='text-center pb-05 pt-17 font-size-12' >Ram Sharma Karki</h3>
+                        <h3 className='font-size-10 text-center'>Chief Guest</h3>
+                    </div>
+                </div>
+
+                <div className="panel-informations">
+                    <div className="panel-images">
+                        <Hexagon>
+                            <StyledImage src={Post} />
+                        </Hexagon>
+                    </div>
+                    <div className="info-user-details">
+                        <h3 className='text-center pb-05 pt-17 font-size-12' >Ram Sharma Karki</h3>
+                        <h3 className='font-size-10 text-center'>Chief Guest</h3>
+                    </div>
+                </div>
+
+                <div className="panel-informations">
+                    <div className="panel-images">
+                        <Hexagon>
+                            <StyledImage src={Post} />
+                        </Hexagon>
+                    </div>
+                    <div className="info-user-details">
+                        <h3 className='text-center pb-05 pt-17 font-size-12' >Ram Sharma Karki</h3>
+                        <h3 className='font-size-10 text-center'>Chief Guest</h3>
+                    </div>
+                </div>
+
+                <div className="panel-informations">
+                    <div className="panel-images">
+                        <Hexagon>
+                            <StyledImage src={Post} />
+                        </Hexagon>
+                    </div>
+                    <div className="info-user-details">
+                        <h3 className='text-center pb-05 pt-17 font-size-12' >Ram Sharma Karki</h3>
+                        <h3 className='font-size-10 text-center'>Chief Guest</h3>
+                    </div>
+                </div>
+
+                <div className="panel-informations">
+                    <div className="panel-images">
+                        <Hexagon>
+                            <StyledImage src={Post} />
+                        </Hexagon>
+                    </div>
+                    <div className="info-user-details">
+                        <h3 className='text-center pb-05 pt-17 font-size-12' >Ram Sharma Karki</h3>
+                        <h3 className='font-size-10 text-center'>Chief Guest</h3>
+                    </div>
+                </div>
+
+                <div className="panel-informations">
+                    <div className="panel-images">
+                        <Hexagon>
+                            <StyledImage src={Post} />
+                        </Hexagon>
                     </div>
                     <div className="info-user-details">
                         <h3 className='text-center pb-05 pt-17 font-size-12' >Ram Sharma Karki</h3>
@@ -26,6 +90,17 @@ function PanelList() {
                     </div>
                 </div>
             </div>
+
+            {/* <HexagonWrapper>
+                <HexagonParent>
+                    <Hexagon>
+                        <StyledImage src={Post} />
+                    </Hexagon>
+                    <HexagonText>LegendEye</HexagonText>
+                </HexagonParent>
+            </HexagonWrapper> */}
+
+
 
         </div>
     )

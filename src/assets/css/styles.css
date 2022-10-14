@@ -74,7 +74,7 @@ h1 {
     font-family: 'polaris';
     font-weight: 400;
     text-shadow: 0px 11px 23px rgba(12, 255, 240, 0.25);
-    ;
+    text-transform : uppercase;
 }
 
 
@@ -83,6 +83,7 @@ h2 {
     font-weight: 400;
     font-family: "polaris";
     text-shadow: 0px 11px 23px rgba(12, 255, 240, 0.25);
+    text-transform: uppercase;
 }
 
 h3 {
@@ -220,9 +221,12 @@ label {
 }
 
 .form--input input::placeholder,
-.form--input textarea::placeholder{
+.form--input textarea::placeholder {
     color: rgba(18, 17, 39, 0.4);
-    
+    font-family: 'Montserrat Alternates';
+    font-size: 1.4rem;
+    font-weight: 500;
+
 }
 
 form button {
@@ -320,15 +324,21 @@ textarea {
     border-radius: 8px;
 }
 
-.contact-form-button button {
-    all: unset;
-    cursor: pointer;
 
+.contact-form-button {
+    color: #3F43C8;
 }
 
-.contact-form-button button img {
-    width: 13rem;
-    height: auto;
+.contact-form-button button {
+    all: unset;
+}
+
+.contact-form-button button div:hover {
+    background: linear-gradient(180deg, #CF069A 0%, #2015C9 100%);
+    box-shadow: 2px 2px 0px #1F2228;
+    border-radius: 1px;
+    color: white;
+    clip-path: polygon(0 30%, 10% 0, 100% 0, 100% 100%, 100% 70%, 90% 100%, 10% 100%, 0% 100%, 0% 10%);
 }
 
 
@@ -357,40 +367,39 @@ textarea {
 
 
 .info-images {
+    display: inline-block;
+    position: relative;
     width: 20rem;
-    height: 18rem;
+    height: 20rem;
     background: white;
-    clip-path: polygon(0 10%,
-            10% 0,
-            100% 0,
-            100% 100%,
-            100% 90%,
-            90% 100%,
-            10% 100%,
-            0% 100%,
-            0% 10%)
+    box-sizing: border-box;
+    clip-path: polygon(0 10%, 10% 0, 100% 0, 100% 100%, 100% 90%, 90% 100%, 10% 100%, 0% 100%, 0% 10%)
 }
 
 .team-member-informations img {
-    width: 100%;
-    height: 100%;
-    border: 2px solid #F3F3F6;
-    /* background: #F3F3F6; */
-    clip-path: polygon(0 10%,
-            10% 0,
-            100% 0,
-            100% 100%,
-            100% 90%,
-            90% 100%,
-            10% 100%,
-            0% 100%,
-            0% 10%)
+    position: absolute;
+  top: 0.2rem; /* equal to border thickness */
+  left: 0.2rem; /* equal to border thickness */
+  width: 19.6rem; /* container height - (border thickness * 2) */
+  height: 19.6rem; /* container height - (border thickness * 2) */
+  clip-path : polygon(0 10%, 10% 0, 100% 0, 100% 100%, 100% 90%, 90% 100%, 10% 100%, 0% 100%, 0% 10%)
 }
 
 /* panel */
-.panel-images {
-    clip-path: polygon(0 31%, 51% 0, 100% 29%, 100% 74%, 49% 100%, 0 73%);
+.panel-information {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
 }
+
+.panel-informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 
 /* navbar burger container */
@@ -443,7 +452,7 @@ textarea {
     padding-right: 20.7rem;
 }
 
-.sponser-items{
+.sponser-items {
     margin-bottom: 8.4rem;
 }
 
@@ -455,7 +464,7 @@ textarea {
     padding: 2rem;
 }
 
-.sponser-info{
+.sponser-info {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
@@ -463,8 +472,54 @@ textarea {
     justify-content: center;
 }
 
-.sponser-info img { 
+.sponser-info img {
     width: 8rem;
     height: auto;
+}
+
+/* events */
+
+.event-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+
+
+.event-container .event-items{
+    display: flex;
+    gap: 8rem;
+}
+
+
+
+/* .event-container .event-items .event-items-details{
+    padding-right: 15rem;
+} */
+
+.event-container .event-items .event-items-img img{
+    width: 32.2rem;
+    height: auto;
+    clip-path: polygon(0 10%, 10% 0, 100% 0, 100% 100%, 100% 90%, 90% 100%, 10% 100%, 0% 100%, 0% 10%);
+}
+
+.event-container .event-items:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.event-container .event-items:nth-child(odd) .event-items-details{
+    padding-right: 10rem;
+
+}
+
+
+.event-container .event-items:nth-child(even) .event-items-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: right;
+    padding-left: 10rem;
 
 }

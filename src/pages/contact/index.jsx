@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ContactSubmitBtn from '../../assets/contactsubmitbtn.svg'
 import axios from 'axios';
+import { ContactBtn } from '../../components/navbar/styles';
 
 function Contact() {
   const [name, setName] = useState("");
@@ -45,8 +46,8 @@ function Contact() {
 
               <div className="form--input">
                 <label htmlFor="phone">EMAIL ADDRESS</label>
-                <input type="text" name='phone' placeholder='jackson.legend@gmail.com'  required
-                onChange={(e) => setEmail(e.target.value)} />
+                <input type="text" name='phone' placeholder='jackson.legend@gmail.com' required
+                  onChange={(e) => setEmail(e.target.value)} />
               </div>
 
               <div className="form--input">
@@ -60,7 +61,7 @@ function Contact() {
               </div>
               <div className="contact-form-button">
                 <button>
-                  <img src={ContactSubmitBtn} alt="" />
+                  <ContactBtn >SEND</ContactBtn>
                 </button>
               </div>
             </form>
