@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 
 @font-face {
   font-family: "comming-soon";
@@ -27,6 +27,7 @@
   position: fixed;
   top: 0;
   overflow: hidden;
+  z-index: 1000;
 }
 
 .imageImg {
@@ -177,7 +178,7 @@
   margin-top: -50px;
 }
 
-.social-div-inside>* {
+.social-div-inside > * {
   margin: 0 10px;
   margin-top: -20px;
 }
@@ -477,7 +478,6 @@
   background-size: cover;
 }
 
-
 .home-bg-copy {
   position: fixed;
   top: 0;
@@ -491,13 +491,11 @@
 .hackathon-bg-copy {
   background: url(/src/assets/Hackathon.svg);
   background-size: cover;
-
 }
 
 .startup-bg-copy {
   background: url(/src/assets/startupIdeas.svg);
   background-size: cover;
-
 }
 
 .exhibition-bg-copy {
@@ -508,11 +506,7 @@
 .robo-wars-bg-copy {
   background: url(/src/assets/RoboWars.svg);
   background-size: cover;
-
-
 }
-
-
 
 .home-wrapper {
   height: inherit;
@@ -530,11 +524,13 @@
 .linear-wipe {
   text-align: center;
 
-  background: linear-gradient(to right,
-      #b2daf7 10%,
-      #58e9f9 30%,
-      #1f5cd4 60%,
-      #b2daf7 80%);
+  background: linear-gradient(
+    to right,
+    #b2daf7 10%,
+    #58e9f9 30%,
+    #1f5cd4 60%,
+    #b2daf7 80%
+  );
   background-size: 200% auto;
 
   color: #000;
@@ -552,14 +548,14 @@
   }
 }
 
-
 .linear-wipe-startup {
-
-  background: linear-gradient(to right,
-      #DAE0D1 10%,
-      rgba(255, 255, 255, 0.72) 30%,
-      #FFFFFF 60%,
-      #DAE0D1 80%);
+  background: linear-gradient(
+    to right,
+    #dae0d1 10%,
+    rgba(255, 255, 255, 0.72) 30%,
+    #ffffff 60%,
+    #dae0d1 80%
+  );
   background-size: 200% auto;
 
   color: #000;
@@ -577,10 +573,10 @@
   }
 }
 
-.linear-wipe-home-page{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    /* z-index: -100000; */
+.linear-wipe-home-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: -100000; */
 }

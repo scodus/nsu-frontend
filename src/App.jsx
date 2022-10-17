@@ -33,10 +33,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/teams" element={<Teams />} />
           <Route path="/panel" element={<PanelList />} />
-          <Route path="/sponsers" element={ <Sponsers /> } />
-          <Route path="/events" element = { <EventPage />  } />
-          
-
+          <Route path="/sponsers" element={<Sponsers />} />
+          <Route path="/events" element={<EventPage />} />
 
           <Route path="/other" element={<OtherPage />} />
 

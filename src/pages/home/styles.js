@@ -20,7 +20,7 @@ const Header = styled.div`
   background: url(${newBackground});
   background-repeat: no-repeat;
   // background-size: 100% 100%;
-  background-size : cover;
+  background-size: cover;
 `;
 
 const GuestArea = styled.div`
@@ -76,6 +76,7 @@ const HexagonWrapper = styled.div`
   margin: auto;
   transform: translate(-50%, -50%);
   display: flex;
+
   > * {
     margin: 0 5.5rem;
   }
@@ -122,7 +123,28 @@ const EventLeft = styled.div`
 
 const EventRight = styled.div`
   color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem 0rem;
+`;
+
+const EventRightImage1Parent = styled.div`
+  grid-column: 1/2;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  margin-top: -6rem;
+`;
+
+const EventRightImage2Parent = styled.div`
+  grid-column: 2/-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
 `;
 
 const EventRightImageCol1 = styled.div`
@@ -142,11 +164,57 @@ const EventRightImageParent = styled.div`
   justify-content: center;
   border-radius: 7px;
 `;
+
+const EventImageOverlay = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "polaris";
+  font-size: 25px;
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.5s ease;
+`;
 const EventRightImage = styled.img`
-  width: 75%;
-  height: 75%;
-  margin-left: 3rem;
+  width: 100%;
+  height: 100%;
   z-index: 11;
+  transition: all 1s ease;
+`;
+const EventRightImage1ChildrenContainer = styled.div`
+  width: 90%;
+  z-index: 11;
+  overflow: hidden;
+  position: relative;
+
+  &:hover ${EventImageOverlay} {
+    opacity: 1;
+  }
+  &:hover ${EventRightImage} {
+    transform-origin: 20% 40%;
+    transform: scale(1.2) rotate(3deg);
+  }
+`;
+
+const EventRightImage2ChildrenContainer = styled.div`
+  width: 90%;
+  z-index: 11;
+  overflow: hidden;
+  position: relative;
+  &:hover ${EventImageOverlay} {
+    opacity: 1;
+  }
+  &:hover ${EventRightImage} {
+    transform-origin: 20% 40%;
+    transform: scale(1.2) rotate(3deg);
+  }
 `;
 
 const EventRightBlur = styled.img`
@@ -154,6 +222,16 @@ const EventRightBlur = styled.img`
   height: 100%;
   position: absolute;
   z-index: 10;
+  margin-left: -5rem;
+`;
+
+const EventRightRightBlur = styled.img`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  margin-right: -6rem;
+  margin-bottom: -7rem;
 `;
 
 const EventHeading = styled.div`
@@ -192,7 +270,7 @@ const DateImageParent = styled.div`
   position: relative;
   /* height: 500px;
   width: 100vw; */
-`; 
+`;
 
 const DateImageItem = styled.img`
   object-fit: cover;
@@ -267,6 +345,7 @@ const Footer = styled.div`
   text-transform: uppercase;
   color: #a9a9a9;
   border-top: 1px solid #757171;
+  background-color: #161822;
 `;
 
 export {
@@ -283,11 +362,17 @@ export {
   EventArea,
   EventLeft,
   EventRight,
+  EventRightImage1Parent,
+  EventRightImage2Parent,
+  EventRightImage1ChildrenContainer,
+  EventRightImage2ChildrenContainer,
   EventRightImageParent,
+  EventImageOverlay,
   EventRightImage,
   EventRightImageCol1,
   EventRightImageCol2,
   EventRightBlur,
+  EventRightRightBlur,
   EventHeading,
   EventDescription,
   EventButton,
