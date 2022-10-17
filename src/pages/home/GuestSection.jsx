@@ -17,37 +17,37 @@ import Tory from "./../../assets/tory.jpg";
 
 const GuestSection = () => {
   return (
-    <GuestArea>
-      <SpaceBetweenFlex>
+    <GuestArea className="guest-area-mobile">
+      <SpaceBetweenFlex className="space-between-mobile">
         <LeftCube />
-        <GuestAreaTitle>Our Guests</GuestAreaTitle>
-        <HexagonWrapper>
-          <HexagonParent>
-            <Hexagon>
+        <GuestAreaTitle><h1>Our Guests</h1></GuestAreaTitle>
+        <HexagonWrapper className="guest-images-items-container-mobile">
+          <HexagonParent className="guest-images-details">
+            <Hexagon className="images-items-mobile">
               <StyledImage src={Post} />
             </Hexagon>
             <HexagonText>Post Lama</HexagonText>
           </HexagonParent>
 
-          <HexagonParent>
-            <Hexagon>
+          <HexagonParent className="guest-images-details">
+            <Hexagon className="images-items-mobile">
               <StyledImage src={Alesso} />
             </Hexagon>
             <HexagonText>Alesso kumar</HexagonText>
           </HexagonParent>
 
-          <HexagonParent>
-            <Hexagon>
+          <HexagonParent className="guest-images-details">
+            <Hexagon className="images-items-mobile">
               <StyledImage src={Henri} />
             </Hexagon>
             <HexagonText>G Eazy</HexagonText>
           </HexagonParent>
 
-          <HexagonParent>
-            <Hexagon>
+          <HexagonParent className="guest-images-details">
+            <Hexagon className="images-items-mobile">
               <StyledImage src={Tory} />
             </Hexagon>
-            <HexagonText>Tory Shah</HexagonText>
+            <HexagonText className="guest-text">Tory Shah</HexagonText>
           </HexagonParent>
         </HexagonWrapper>
         <RightCube />

@@ -5,9 +5,6 @@ const index = () => {
   return (
     <>
       <div className="home-bg-copy startup-bg-copy">
-        <div className="home-wrapper">
-          {/* <div className="home-main-title linear-wipe">Startup Ideas</div> */}
-        </div>
       </div>
       <div className="home-bg">
         <div className="home-wrapper wrapper-management-200">

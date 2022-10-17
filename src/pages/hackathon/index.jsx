@@ -10,7 +10,7 @@ const index = () => {
       </div>
       <div className="home-bg">
         <div className="home-wrapper">
-          <div className="home-main-title linear-wipe">Hackathon</div>
+          <div className="home-main-title linear-wipe"><h1 className="exhibition-h1"> Hackathon </h1></div>
         </div>
       </div>
 

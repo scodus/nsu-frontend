@@ -45,7 +45,7 @@ function OtherNav({ isBurger, setBurger }) {
       className="all-nav-burger-container"
       style={{ ...mainBurgerStyle, ...mainburgerTransformCheck }}
     >
-      <div style={{ ...burgerStyles }}>
+      <div style={{ ...burgerStyles }} className="nav-burger-items-container">
         <div className="nav-burger-container">
           <div className="nav-burger-hamburger">
             <img src={Hamburger} alt="" onClick={HamBurgerHandler} />

@@ -11,7 +11,13 @@ const NavbarParent = styled.div`
   justify-content: space-between;
   padding: 25px 100px;
   color: #fff;
+  z-index: 1;
 `;
+
+const NavbarMobileParent = styled.div`
+  display : none;
+`;
+
 const Icon = styled.div`
   cursor: pointer;
 `;
@@ -74,6 +80,7 @@ const NavCenterLink = styled(Link)`
   font-weight: 400;
   color: ${(props) => (props.active === "active" ? "#1FF8D1" : "#fff")};
 `;
+
 export {
   NavbarParent,
   NavbarMiddle,
@@ -83,4 +90,5 @@ export {
   ContactBtn,
   NavLink,
   Icon,
+  NavbarMobileParent,
 };

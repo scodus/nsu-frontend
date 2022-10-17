@@ -9,11 +9,11 @@ import {
 import DateImage from "./../../assets/logos/date-image.png";
 const StartingDate = () => {
   return (
-    <DateImageParent>
-      <DateImageItem src={DateImage} />
-      <DateText>
-        <DateTextHeading>
-          Fest Starting from 9 october - 27 october
+    <DateImageParent className="date-parent-mobile">
+      <DateImageItem src={DateImage} className="date-image-mobile"/>
+      <DateText className="starting-date-text-mobile">
+        <DateTextHeading className="date-h1-mobile">
+          Fest Starting from 1- November - 12 November
         </DateTextHeading>
         <DateTextItem>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. At lacus

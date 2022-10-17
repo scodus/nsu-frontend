@@ -27,6 +27,10 @@
     padding-bottom: 4rem;
 }
 
+.navbar-mobile{
+    display: none;
+}
+
 /* fonts */
 
 p {
@@ -107,13 +111,16 @@ label {
     font-weight: 400;
     font-size: 1rem;
     display: block;
-
 }
 
 .start-up-h1{
-    font-size: 6rem;
+    font-size: clamp(4rem,6vw,6rem);    
     text-align: left;
     margin-left: 10.7rem;
+}
+
+.exhibition-h1{
+    font-size: clamp(4rem,6vw,6rem);
 }
 
 .wrapper-management-200{
@@ -195,6 +202,23 @@ label {
     border: 3px solid rgba(255, 255, 255, 0.72);
     border-radius: 8px;
 }
+
+/* footer */
+    .footer-link-container{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .company-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company-link img{
+        width: 100px;
+        height: auto;
+    }
 
 
 /* form */

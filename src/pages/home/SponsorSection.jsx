@@ -7,7 +7,7 @@ import logo5 from "./../../assets/logos/logo-5.png";
 
 const SponsorSection = () => {
   return (
-    <SponsorParent>
+    <SponsorParent className="sponser-partner-mobile">
       <SponsorImage src={logo1} />
       <SponsorImage src={logo2} />
       <SponsorImage src={logo3} />
