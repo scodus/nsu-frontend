@@ -15,7 +15,7 @@ const HomeParent = styled.div`
 
 const Header = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   object-fit: cover;
   background: url(${newBackground});
   background-repeat: no-repeat;
@@ -299,6 +299,8 @@ const DateText = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @
 `;
 
 const DateTextHeading = styled.div`
@@ -337,7 +339,7 @@ const SponsorImage = styled.img`
 `;
 
 const Footer = styled.div`
-  padding: 2rem 16rem;
+  padding: 2rem 10rem;
   font-family: "polaris";
   font-weight: 400;
   font-size: 12px;
@@ -346,7 +348,12 @@ const Footer = styled.div`
   color: #a9a9a9;
   border-top: 1px solid #757171;
   background-color: #161822;
+  display: flex;
+  justify-content : space-between;
+  align-items : center;
 `;
+
+
 
 export {
   Header,

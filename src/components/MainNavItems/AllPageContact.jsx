@@ -14,11 +14,12 @@ function AllPageContact() {
     const data = {
       name: name,
       email: email,
-      phone: phone,
-      subject: subject
+      phoneNumber: phone,
+      subject: subject,
+      message : message
     }
 
-    axios.post("https://nsu-project-dbc22-default-rtdb.firebaseio.com/data.json", data)
+    axios.post("https://knowledge-seekers.herokuapp.com/api/v1/user-message", data)
       .then(res => {
         console.log("Res is ", res)
       })
