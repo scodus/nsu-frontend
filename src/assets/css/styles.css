@@ -7,16 +7,24 @@
     padding: 8.2rem 10.7rem;
 }
 
+
 .extra-padding-container {
     padding: 0rem 12.9rem;
 }
 
-.extra-padding-right-container{
-    padding-right : 19.9rem;
+.extra-padding-right-container {
+    padding-right: 19.9rem;
 }
 
 .contact-form-container {
     padding: 3rem 0;
+}
+
+.other-body-container {
+    padding-top: 7rem;
+    min-height: 125vh;
+    height: auto;
+    padding-bottom: 4rem;
 }
 
 /* fonts */
@@ -27,9 +35,38 @@ p {
     font-family: 'Montserrat Alternates';
 }
 
-.font-size-20{
+.font-size-20 {
     font-size: 2rem;
 }
+
+.font-size-15 {
+    font-size: 1.5rem;
+}
+
+.font-size-12 {
+    font-size: 1.2rem;
+}
+
+.font-size-10 {
+    font-size: 1rem;
+}
+
+.font-size-25 {
+    font-size: 2.5rem;
+}
+
+.font-size-40 {
+    font-size: 4rem;
+}
+
+.h1-small {
+    font-size: 3rem;
+}
+
+.font-family-gravedigger {
+    font-family: 'grave', 'polaris';
+}
+
 
 h1 {
     font-size: 3.5rem;
@@ -37,17 +74,16 @@ h1 {
     font-family: 'polaris';
     font-weight: 400;
     text-shadow: 0px 11px 23px rgba(12, 255, 240, 0.25);
-    ;
+    text-transform : uppercase;
 }
-.h1-small{
-    font-size : 3rem;
-}
+
 
 h2 {
     font-size: 2.5rem;
     font-weight: 400;
     font-family: "polaris";
     text-shadow: 0px 11px 23px rgba(12, 255, 240, 0.25);
+    text-transform: uppercase;
 }
 
 h3 {
@@ -55,7 +91,6 @@ h3 {
     font-family: "polaris";
     color: white;
     font-weight: 400;
-
 }
 
 ul li {
@@ -75,6 +110,16 @@ label {
 
 }
 
+.start-up-h1{
+    font-size: 6rem;
+    text-align: left;
+    margin-left: 10.7rem;
+}
+
+.wrapper-management-200{
+    padding-top: 200px;
+}
+
 
 /* fonts heights and structure */
 .p-height {
@@ -85,8 +130,21 @@ label {
     padding-bottom: 3.1rem;
 }
 
+.pb-05 {
+    padding-bottom: 0.5rem;
+}
+
+.pt-17 {
+    padding-top: 1.7rem;
+}
+
+
 .small-height {
     line-height: 2.5rem;
+}
+
+.small-height-padding {
+    padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -105,12 +163,21 @@ label {
     color: white;
 }
 
-.color-brown{
-    color : #D9D9D9;
+.color-brown {
+    color: #D9D9D9;
 }
+
 
 .color-gold {
     color: #DAE0D1;
+}
+
+.color-grayscale {
+    color: #121127;
+}
+
+.color-grayscale300 {
+    color: rgba(209, 209, 219, 1);
 }
 
 .ul-color-white {
@@ -136,18 +203,18 @@ label {
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(2, auto);
     gap: 2rem;
 }
 
-.full-width{
+.full-width {
     grid-column: 1 / 3;
 }
 
 .form-inputs input {
     border: 1px solid rgba(18, 17, 39, 0.12);
     border-radius: 5px;
-    padding: 1rem 1.6rem ;
+    padding: 1rem 1.6rem;
     gap: 1rem;
     width: 28rem;
 }
@@ -158,12 +225,22 @@ label {
     width: 100%;
 }
 
-.form_inputs input::placeholder { 
+.form_inputs input::placeholder {
     font-family: 'Montserrat Alternates';
+    color: rgba(18, 17, 39, 0.4);
+}
+
+.form--input input::placeholder,
+.form--input textarea::placeholder {
+    color: rgba(18, 17, 39, 0.4);
+    font-family: 'Montserrat Alternates';
+    font-size: 1.4rem;
+    font-weight: 500;
+
 }
 
 form button {
-    background : #444BD3;
+    background: #444BD3;
     color: white;
     padding: 1rem 2rem;
     border-radius: 5px;
@@ -174,21 +251,21 @@ form button {
 }
 
 
-.robo-wars-bg{
+.robo-wars-bg {
     /* background-image: url("../rectangle.svg"),linear-gradient(rgba(23, 86, 65, 1),rgba(23, 86, 65, 1));;
     background-blend-mode: overlay; */
-    background-image: url(/src/assets/rectangle.svg),linear-gradient(rgb(19 25 37),rgb(12 43 77));
+    background-image: url(/src/assets/rectangle.svg), linear-gradient(rgb(19 25 37), rgb(12 43 77));
     background-blend-mode: overlay;
 }
 
-.hackaton-bg{
-    background-image: linear-gradient(rgb(39 40 101 / 94%),rgb(13 55 99));
+.hackaton-bg {
+    background-image: linear-gradient(rgb(39 40 101 / 94%), rgb(13 55 99));
     /* background-image: url("../greenRectangle.svg"),linear-gradient(rgba(23, 86, 65, 1),rgba(23, 86, 65, 1));; */
     background-blend-mode: overlay;
 }
 
-.start-up-bg{
-    background-image: url(/src/assets/Group.svg),linear-gradient(rgb(36 71 114),rgb(4 48 92));
+.start-up-bg {
+    background-image: url(/src/assets/Group.svg), linear-gradient(rgb(36 71 114), rgb(4 48 92));
     /* background-image: url("../Group.svg"),linear-gradient(rgba(73, 106, 208, 1),rgba(73, 106, 208, 1));; */
     background-blend-mode: multiply;
     background-repeat: no-repeat;
@@ -197,57 +274,262 @@ form button {
 }
 
 
-.exhibition-bg{
-    background-image: url("../bluerectangle.png"),linear-gradient(rgba(23, 86, 65, 1),rgba(23, 86, 65, 1));;
+.exhibition-bg {
+    background-image: url("../bluerectangle.png"), linear-gradient(rgba(23, 86, 65, 1), rgba(23, 86, 65, 1));
+    ;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.form-title p{
+.form-title p {
     font-size: 1.5rem;
 }
 
 
 /* Contact Us Page */
-.contact-form-page-container{
+.contact-form-page-container {
     display: flex;
-    padding: 4.6rem;
-    padding-top: 10rem;
-    /* margin: 4.6rem; */
+    margin: 4.6rem;
     box-shadow: 0px 4px 84px rgba(255, 255, 255, 0.25);
 }
 
-.contact-left{
+.contact-left {
     width: 50%;
+    background: url('../contactpageimage.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 8.6rem 9.6rem 2rem 15.6rem;
 }
 
-.contact-right{
+.contact-right {
     width: 50%;
     background: white;
+    padding: 8.6rem 4.5rem 4rem 9.6rem;
 }
 
 .contact-right form {
     width: 100%;
-    padding: 1rem 0.8rem;
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 .contact-right form label {
-    color: black;
+    color: rgba(18, 17, 39, 0.56);
 }
 
-.contact-right form .form--input{
+.contact-right form .form--input {
+    /* width: 80%; */
+    margin-bottom: 2rem;
+}
+
+
+.contact-right form input,
+textarea {
     width: 80%;
+    padding: 1rem 0.9rem;
+    border: 1px solid rgba(18, 17, 39, 0.12);
+    border-radius: 8px;
 }
 
 
-.contact-right form input, textarea{
-    width: 70%;
-    padding: 1rem 0.9rem;
-    border-radius: 5px;
-    outline: none;
+.contact-form-button {
+    color: #3F43C8;
+}
+
+.contact-form-button button {
+    all: unset;
+}
+
+.contact-form-button button div:hover {
+    background: linear-gradient(180deg, #CF069A 0%, #2015C9 100%);
+    box-shadow: 2px 2px 0px #1F2228;
+    border-radius: 1px;
+    color: white;
+    clip-path: polygon(0 30%, 10% 0, 100% 0, 100% 100%, 100% 70%, 90% 100%, 10% 100%, 0% 100%, 0% 10%);
+}
+
+
+
+/* team members css */
+
+.team-member {
+    padding-top: 4rem;
+}
+
+.team-member-information {
+    display: grid;
+    gap: 2rem;
+    /* grid-template-colums : repeat(auto-fill, minmax()) */
+    grid-template-columns: repeat(auto-fill, minmax(20rem, auto));
+}
+
+.team-member-title {
+    padding: 0 20rem 3rem 20rem
+}
+
+.team-member-informations {
+    width: 20rem;
+    height: auto;
+}
+
+
+.info-images {
+    display: inline-block;
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    background: white;
+    box-sizing: border-box;
+    clip-path: polygon(0 10%, 10% 0, 100% 0, 100% 100%, 100% 90%, 90% 100%, 10% 100%, 0% 100%, 0% 10%)
+}
+
+.team-member-informations img {
+    position: absolute;
+  top: 0.2rem; /* equal to border thickness */
+  left: 0.2rem; /* equal to border thickness */
+  width: 19.6rem; /* container height - (border thickness * 2) */
+  height: 19.6rem; /* container height - (border thickness * 2) */
+  clip-path : polygon(0 10%, 10% 0, 100% 0, 100% 100%, 100% 90%, 90% 100%, 10% 100%, 0% 100%, 0% 10%)
+}
+
+/* panel */
+.panel-information {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+}
+
+.panel-informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* navbar burger container */
+.nav-burger-container {
+    margin: 7rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.nav-burger-hamburger {
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-burger-items ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.nav-burger-items li {
+    list-style-type: none;
+
+}
+
+.nav-burger-items li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'polaris';
+    font-size: 3rem;
+}
+
+.nav-burger-container li a:hover {
+    color: yellow;
+}
+
+.sponser-content-container {
+    background: url(../RotatingAlienShip.svg);
+    width: 100%;
+    height: 120vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.sponser-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 20.7rem;
+}
+
+.sponser-items {
+    margin-bottom: 8.4rem;
+}
+
+.sponser-list {
+    border: 1px solid #2AB7FF;
+    box-shadow: 0px 9px 23px rgba(74, 122, 255, 0.2);
+    border-radius: 8px;
+    width: 37rem;
+    padding: 2rem;
+}
+
+.sponser-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponser-info img {
+    width: 8rem;
+    height: auto;
+}
+
+/* events */
+
+.event-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+
+
+.event-container .event-items{
+    display: flex;
+    gap: 8rem;
+}
+
+
+
+/* .event-container .event-items .event-items-details{
+    padding-right: 15rem;
+} */
+
+.event-container .event-items .event-items-img img{
+    width: 32.2rem;
+    height: auto;
+    clip-path: polygon(0 10%, 10% 0, 100% 0, 100% 100%, 100% 90%, 90% 100%, 10% 100%, 0% 100%, 0% 10%);
+}
+
+.event-container .event-items:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.event-container .event-items:nth-child(odd) .event-items-details{
+    padding-right: 10rem;
+
+}
+
+
+.event-container .event-items:nth-child(even) .event-items-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: right;
+    padding-left: 10rem;
+
 }

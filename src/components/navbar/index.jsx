@@ -11,7 +11,7 @@ import {
 import { ReactComponent as MenuIcon } from "./../../assets/hamburger.svg";
 import { useLocation } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const { pathname } = useLocation();
 
   // use this to render navbar active link
@@ -20,10 +20,14 @@ const Navbar = () => {
   };
   // --------------------------
 
+  const BurgerButtonHandler = () => {
+    props.setBurger(true);
+  }
+
   return (
     <NavbarParent>
-      <Icon>
-        <MenuIcon />
+      <Icon onClick={BurgerButtonHandler}>
+        <MenuIcon/>
       </Icon>
       <NavbarMiddle>
         <NavbarCenterLeft>

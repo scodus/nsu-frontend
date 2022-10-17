@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 
 @font-face {
   font-family: "comming-soon";
@@ -15,6 +15,7 @@
   font-family: "paladins";
   src: url("/src/assets/fonts/paladins.ttf");
 }
+
 @font-face {
   font-family: "polaris";
   src: url("/src/assets/fonts/Polaris.otf");
@@ -26,6 +27,7 @@
   position: fixed;
   top: 0;
   overflow: hidden;
+  z-index: 1000;
 }
 
 .imageImg {
@@ -255,6 +257,7 @@
     width: 400px;
     height: 400px;
   }
+
   .imageImg {
     margin-left: 0px;
     margin-top: 0px;
@@ -281,6 +284,7 @@
     width: 300px;
     height: 300px;
   }
+
   .imageImg {
     margin-left: 0px;
     margin-top: 0px;
@@ -307,11 +311,13 @@
     font-size: 24px;
   }
 }
+
 @media screen and (min-width: 1030px) and (max-width: 1171px) {
   .loader {
     margin-left: -17.7vw;
   }
 }
+
 @media screen and (min-width: 767px) and (max-width: 992px) {
   .image-curtain {
     justify-content: flex-start;
@@ -333,6 +339,7 @@
   .loader {
     margin-left: 28vw;
   }
+
   .image-curtain {
     background-position: left;
   }
@@ -392,6 +399,7 @@
   .image-curtain {
     background-position: right;
   }
+
   .loader {
     margin: 0 auto;
     flex-direction: column;
@@ -418,9 +426,11 @@
     margin-left: 0px;
     margin-top: 40px;
   }
+
   .nsu-tech-fest {
     font-size: 30px;
   }
+
   .image {
     height: 95vh;
   }
@@ -445,14 +455,17 @@
   stroke-width: 0.4811;
   stroke-miterlimit: 10;
 }
+
 .ldio-fpzvie7mduv-st2 {
   opacity: 0.8;
 }
+
 .ldio-fpzvie7mduv-st3 {
   fill: none;
   stroke-width: 0.5;
   stroke-miterlimit: 10;
 }
+
 .ldio-fpzvie7mduv-st4 {
   fill: none;
   stroke-width: 0.4694;
@@ -460,31 +473,54 @@
 }
 
 .home-bg {
-  background: url(/src/assets/backgroudnsu.png);
   height: 100vh;
   width: 100%;
   background-size: cover;
 }
+
 .home-bg-copy {
   position: fixed;
   top: 0;
-  background: url(/src/assets/background.jpg);
+  /* background: url(/src/assets/background.jpg); */
   height: 100vh;
   width: 100%;
   z-index: -1;
   background-size: cover;
 }
+
+.hackathon-bg-copy {
+  background: url(/src/assets/Hackathon.svg);
+  background-size: cover;
+}
+
+.startup-bg-copy {
+  background: url(/src/assets/startupIdeas.svg);
+  background-size: cover;
+}
+
+.exhibition-bg-copy {
+  background: url(/src/assets/Exhibition.svg);
+  background-size: cover;
+}
+
+.robo-wars-bg-copy {
+  background: url(/src/assets/RoboWars.svg);
+  background-size: cover;
+}
+
 .home-wrapper {
   height: inherit;
   width: inherit;
   padding-top: 300px;
   text-align: center;
 }
+
 .home-main-title {
   font-size: 60px;
   text-transform: uppercase;
   font-family: "grave";
 }
+
 .linear-wipe {
   text-align: center;
 
@@ -505,8 +541,42 @@
 
   animation: shine 3s linear infinite;
 }
+
 @keyframes shine {
   to {
     background-position: 200% center;
   }
+}
+
+.linear-wipe-startup {
+  background: linear-gradient(
+    to right,
+    #dae0d1 10%,
+    rgba(255, 255, 255, 0.72) 30%,
+    #ffffff 60%,
+    #dae0d1 80%
+  );
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: wipes 3s linear infinite;
+}
+
+@keyframes wipes {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.linear-wipe-home-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: -100000; */
 }

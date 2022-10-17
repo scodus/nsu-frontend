@@ -7,9 +7,15 @@ import {
   EventRight,
   EventRightBlur,
   EventRightImage,
+  EventRightImage1Parent,
+  EventRightImage2Parent,
+  EventRightImage1ChildrenContainer,
   EventRightImageCol1,
   EventRightImageCol2,
   EventRightImageParent,
+  EventRightImage2ChildrenContainer,
+  EventRightRightBlur,
+  EventImageOverlay,
 } from "./styles";
 import Event1 from "./../../assets/events/event-1-1.png";
 import Event1Bg from "./../../assets/events/event-1-1-bg.png";
@@ -32,26 +38,39 @@ const EventSection = () => {
         <EventButton>see more</EventButton>
       </EventLeft>
       <EventRight>
-        {/* column 1  */}
-        <EventRightImageCol1>
-          <EventRightImageParent>
-            <EventRightBlur src={Event1Bg} />
+        {/* -------------  */}
+        <EventRightImage1Parent>
+          <EventRightImage1ChildrenContainer>
             <EventRightImage src={Event1} />
-          </EventRightImageParent>
-          <EventRightImageParent image={Event2Bg}>
-            <EventRightImage src={Event2} />
-          </EventRightImageParent>
-        </EventRightImageCol1>
-        {/* column 2 */}
-        <EventRightImageCol2>
-          <EventRightImageParent image={Event3Bg}>
+            <EventImageOverlay>robo war</EventImageOverlay>
+          </EventRightImage1ChildrenContainer>
+          <EventRightBlur src={Event1Bg} />
+        </EventRightImage1Parent>
+
+        <EventRightImage2Parent>
+          <EventRightImage2ChildrenContainer>
             <EventRightImage src={Event3} />
-          </EventRightImageParent>
-          <EventRightImageParent image={Event4Bg}>
+            <EventImageOverlay>startup</EventImageOverlay>
+          </EventRightImage2ChildrenContainer>
+          <EventRightRightBlur src={Event3Bg} />
+        </EventRightImage2Parent>
+
+        <EventRightImage1Parent>
+          <EventRightImage1ChildrenContainer>
+            <EventRightImage src={Event2} />
+            <EventImageOverlay>hackathon</EventImageOverlay>
+          </EventRightImage1ChildrenContainer>
+          <EventRightBlur src={Event2Bg} />
+        </EventRightImage1Parent>
+
+        <EventRightImage2Parent>
+          <EventRightImage2ChildrenContainer>
             <EventRightImage src={Event4} />
-          </EventRightImageParent>
-        </EventRightImageCol2>
-        {/* column 2 end */}
+            <EventImageOverlay>exhibition</EventImageOverlay>
+          </EventRightImage2ChildrenContainer>
+          <EventRightRightBlur src={Event4Bg} />
+        </EventRightImage2Parent>
+        {/* ------------------- */}
       </EventRight>
     </EventArea>
   );
