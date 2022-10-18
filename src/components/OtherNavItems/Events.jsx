@@ -1,4 +1,5 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 
 const bodyContainer = {
   background: "linear-gradient(180deg, #000032 0%, #171720 100%)",
@@ -12,7 +13,7 @@ function Events() {
     <div className='other-body-container big-container' style={bodyContainer}>
       <h1 className='h1-height color-white font-family-gravedigger '>OUR EVENTS</h1>
 
-      <div className="event-container">
+      <motion.div initial = {{opacity:0}} animate = {{opacity:1}}  transition={{ delay : 0.45,duration : 0.75}} className="event-container">
         <div className="event-items">
           <div className="event-items-img">
             <img src="https://picsum.photos/700/700" alt="" />
@@ -55,7 +56,7 @@ function Events() {
         </div>
 
 
-      </div>
+      </motion.div>
 
     </div>
   )

@@ -209,6 +209,18 @@ label {
         gap: 1rem;
     }
 
+    .footer-event-information{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-event-information i{
+        font-size: 1.5rem;
+        color: white;
+    }
+
     .company-link{
         display: flex;
         justify-content: center;
@@ -274,12 +286,21 @@ form button {
     text-align: right;
 }
 
+form button:hover{
+    opacity : 0.6;
+    cursor: pointer;
+}
+
 
 .robo-wars-bg {
     /* background-image: url("../rectangle.svg"),linear-gradient(rgba(23, 86, 65, 1),rgba(23, 86, 65, 1));;
     background-blend-mode: overlay; */
     background-image: url(/src/assets/rectangle.svg), linear-gradient(rgb(19 25 37), rgb(12 43 77));
     background-blend-mode: overlay;
+}
+
+.robo-war-h1-mobile{
+    display: none;
 }
 
 .hackaton-bg {

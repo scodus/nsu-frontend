@@ -11,6 +11,7 @@ import {
 import { ReactComponent as MenuIcon } from "./../../assets/hamburger.svg";
 import { useLocation } from "react-router-dom";
 import NavBarMobile from "../otherNavBar/NavBarMobile";
+import NSULOGO from "./../../assets/nsuLogo.png";
 
 const Navbar = ({setBurger, setMobileBurger}) => {
   const { pathname } = useLocation();
@@ -50,7 +51,7 @@ const Navbar = ({setBurger, setMobileBurger}) => {
               to="/"
               state={{ clicked: true }}
             >
-              NSU
+             <img src={NSULOGO} alt="" style={{width:"5rem"}} />
             </NavCenterLink>
             <NavbarCenterRight>
               <NavLink active={renderActive("exhibition")} to={"/exhibition"}>

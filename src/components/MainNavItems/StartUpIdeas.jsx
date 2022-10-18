@@ -1,6 +1,5 @@
 import React from 'react'
 import AllPageContact from './AllPageContact'
-import {motion} from 'framer-motion';
 
 function StartUpIdeas() {
   return (
@@ -22,12 +21,14 @@ function StartUpIdeas() {
       </div>
 
       <div className="small-container start-up-bg" >
-        <motion.h2 viewport = {{once : false}} initial = {{opacity : 0,x : -100}} whileInView = {{opacity : 1,x :0}} transition = {{type : "easeIn", duration : 1, delay : 0.15}}  className="color-gold h1-height">WHO CAN PARTICIPATE ?</motion.h2>
-        <motion.ul viewport = {{once : false}} initial = {{opacity : 0,x : -100}} whileInView = {{opacity : 1.25,x :0}} transition = {{type : "easeIn", duration : 1, delay : 0.20}} className="ul-color-white">
+        {/* <motion.h2 viewport = {{once : true}} initial = {{opacity : 0,x : -100}} whileInView = {{opacity : 1,x :0}} transition = {{type : "easeIn", duration : 1, delay : 0.15}}  className="color-gold h1-height">WHO CAN PARTICIPATE ?</motion.h2> */}
+        <h2 className="color-gold h1-height">WHO CAN PARTICIPATE ?</h2>
+
+        <ul className="ul-color-white">
           <li>Why consistent writing makes you a better designer</li>
           <li>5 soft skills every product designer should master</li>
           <li>The UX Writing Starter-Kit</li>
-        </motion.ul>
+        </ul>
       </div>
 
       <AllPageContact />

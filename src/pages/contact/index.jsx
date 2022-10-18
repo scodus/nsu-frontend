@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import ContactSubmitBtn from '../../assets/contactsubmitbtn.svg'
 import axios from 'axios';
 import { ContactBtn } from '../../components/navbar/styles';
 
@@ -11,6 +10,11 @@ function Contact() {
 
   const [message, setMessage] = useState("");
   const [isSuccess, setSuccess] = useState(false);
+  const [isError, SetError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
+
+
+
 
   const SubmitHandler = (e) => {
     e.preventDefault();
@@ -19,23 +23,30 @@ function Contact() {
       email: email,
       phoneNumber: phone,
       subject: subject,
-      message : message
+      message: message,
+      type: "contact-page"
     }
+    setIsLoading(true);
 
     axios.post("https://knowledge-seekers.herokuapp.com/api/v1/user-message", data)
       .then(res => {
-        console.log("Res is ", res)
-        if (res.status === 200){
+        if (res.status === 201) {
           setName("");
           setEmail("");
           setPhone("");
           setMessage("");
           setSubject("");
           setSuccess(true);
-          const setTimeInterval = setTimeout(() => {setSuccess(false)},3000)
+          setIsLoading(false);
+          const setTimeInterval = setTimeout(() => { setSuccess(false) }, 3000)
         }
       })
-      .catch(err => console.log("err is ", err))
+      .catch(err => {
+        SetError(true);
+        setIsLoading(false);
+        const setTimeIntervalError = setTimeout(() => { SetError(false) }, 3000)
+      }
+      )
 
   }
 
@@ -70,12 +81,18 @@ function Contact() {
                 <label htmlFor="message">MESSAGE</label>
                 <textarea name="" value={message} id="" cols="30" placeholder='Type here' required onChange={(e) => setMessage(e.target.value)}></textarea>
               </div>
-              { isSuccess && <p style={{paddingBottom : '1rem',color:'green',fontSize : '1.3rem'}}>Thank You for Contacting Us</p> }
-              
+              {isSuccess && <p style={{ paddingBottom: '1rem', color: 'green', fontSize: '1.3rem' }}>Thank You for Contacting Us</p>}
+              {isError && <p style={{ paddingBottom: '1rem', color: 'red', fontSize: '1.2rem' }}>Sorry, Error Occured. Please Try Again</p>}
+
               <div className="contact-form-button">
-                <button>
-                  <ContactBtn >SEND</ContactBtn>
-                </button>
+                {isLoading
+                  ? <button disabled style={{opacity : "0.4"}}>
+                    <ContactBtn >Sending....</ContactBtn>
+                  </button>
+                  : <button>
+                    <ContactBtn >SEND</ContactBtn>
+                  </button>
+                }
               </div>
             </form>
           </div>

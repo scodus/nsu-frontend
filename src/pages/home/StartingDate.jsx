@@ -13,11 +13,10 @@ const StartingDate = () => {
       <DateImageItem src={DateImage} className="date-image-mobile"/>
       <DateText className="starting-date-text-mobile">
         <DateTextHeading className="date-h1-mobile">
-          Fest Starting from 1- November - 12 November
+          Fest Starting from 10 - November - 12 November
         </DateTextHeading>
         <DateTextItem>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. At lacus
-          risus elit, amet. Risus amet, vulputate eros praesent.
+          Venue : Bhrikutimandap, Kathmandu
         </DateTextItem>
       </DateText>
       <DateImageOverlay></DateImageOverlay>

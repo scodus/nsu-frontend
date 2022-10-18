@@ -1,6 +1,7 @@
 import React from 'react'
 import { Hexagon, HexagonParent, HexagonText, HexagonWrapper, StyledImage } from '../../pages/home/styles'
 import Post from '../../assets/postmalone.jpg'
+import {motion} from 'framer-motion';
 
 const bodyContainer = {
     background: "linear-gradient(180deg, #000032 0%, #171720 100%)",
@@ -17,7 +18,7 @@ function PanelList() {
                 </div>
             </div>
 
-            <div className="panel-information">
+            <motion.div initial = {{opacity:0}} animate = {{opacity:1}}  transition={{ delay : 0.45,duration : 0.75}}  className="panel-information">
                 <div className="panel-informations">
                     <div className="panel-images">
                         <Hexagon>
@@ -89,18 +90,7 @@ function PanelList() {
                         <h3 className='font-size-10 text-center'>Chief Guest</h3>
                     </div>
                 </div>
-            </div>
-
-            {/* <HexagonWrapper>
-                <HexagonParent>
-                    <Hexagon>
-                        <StyledImage src={Post} />
-                    </Hexagon>
-                    <HexagonText>LegendEye</HexagonText>
-                </HexagonParent>
-            </HexagonWrapper> */}
-
-
+            </motion.div>
 
         </div>
     )

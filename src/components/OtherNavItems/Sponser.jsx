@@ -1,5 +1,6 @@
 import React from 'react'
 import DiscordLogo from '../../assets/DiscordLogo.svg'
+import {motion} from 'framer-motion'
 
 const bodyContainer = {
   background: "linear-gradient(180deg, #000032 0%, #171720 100%)",
@@ -13,11 +14,11 @@ function Sponser() {
       <div className="team-member">
       <div className="team-member-title text-center">
                     <h1 className='color-white h1-small font-family-gravedigger' style={{ paddingBottom: '1.1rem' }}>OUR SPONSERS</h1>
-                    <p className='font-size-15 small-height-padding color-grayscale300' >So we can tailor your support experience. If that’s not possible, we’d still like to hear from you.</p>
+                    <motion.p initial = {{opacity:0}} animate = {{opacity:1}}  transition={{ delay : 0.30,duration : 0.75}}  className='font-size-15 small-height-padding color-grayscale300' >So we can tailor your support experience. If that’s not possible, we’d still like to hear from you.</motion.p>
                 </div>
       </div>
 
-      <div className="sponser-content-container">
+      <motion.div initial = {{opacity:0}} animate = {{opacity:1}}  transition={{ delay : 0.60,duration : 0.75}} className="sponser-content-container">
         <div className="sponser-content extra-padding-container extra-padding-container">
 
             <div className="sponser-items">
@@ -65,7 +66,7 @@ function Sponser() {
 
             </div>
         </div>
-      </div>
+      </motion.div>
 
 
 

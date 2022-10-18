@@ -19,15 +19,25 @@ const HomepageLayout = ({ render }) => {
         {render()}
       </AnimatedPage>
 
-      
+
       <OtherNav isBurger={burger} setBurger={setBurger} isMobileBurger={mobileBurger} setMobileBurger={setMobileBurger} />
       <OtherNavSidebarMobile isBurger={mobileBurger} setBurger={setMobileBurger} />
 
 
 
       <Footer className="footer-mobile">
-        <p className="font-size-12">&#169; NSU Tech Fest</p>
-
+        <div className="footer-event-information">
+          <p className="font-size-12">&#169; NSU Tech Fest </p>
+          <a href="https://www.instagram.com/nsuteschfest2022/" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100086146719747" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCEvQ29bAcV9iyX8wgZ8v_Bw" target = "_blank">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
         <div className="footer-link-container">
           <Link to="/privacy" className="color-white">Privacy Policy</Link>
           <Link to="/termsandcondition" className="color-white">Terms and Conditions</Link>

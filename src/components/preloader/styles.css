@@ -557,10 +557,10 @@
 .linear-wipe-startup {
   background: linear-gradient(
     to right,
-    #dae0d1 10%,
-    rgba(255, 255, 255, 0.72) 30%,
-    #ffffff 60%,
-    #dae0d1 80%
+    #f0eded 10%,
+    rgba(163, 160, 160, 0.72) 30%,
+    #e8c8c8 60%,
+    #bcc7ab 80%
   );
   background-size: 200% auto;
 
