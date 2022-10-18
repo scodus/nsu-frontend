@@ -295,7 +295,6 @@ form button:hover{
     cursor: pointer;
 }
 
-
 .robo-wars-bg {
     /* background-image: url("../rectangle.svg"),linear-gradient(rgba(23, 86, 65, 1),rgba(23, 86, 65, 1));;
     background-blend-mode: overlay; */
@@ -581,4 +580,21 @@ textarea {
     text-align: right;
     padding-left: 10rem;
 
+}
+
+
+.padding-0{
+    padding: 0;
+}
+
+.padding-top{
+    padding-top : 20rem;
+}
+
+.flex-property{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }

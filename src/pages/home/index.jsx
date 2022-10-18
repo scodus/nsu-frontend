@@ -14,10 +14,10 @@ const HomePage = () => {
 
   return (
     <HomeParent>
-      {/* {!location?.state?.clicked && <PreLoader />} */}
+      {!location?.state?.clicked && <PreLoader />}
       {/* Hero Section */}
 
-      {/* <PreLoader /> */}
+      {/* <PreLoader /> */} 
 
       <Header className="bg-center-mobile" />
       <div className="home-main-title linear-wipe linear-wipe-home-page">
