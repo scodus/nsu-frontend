@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "./styles.css";
+import preloaderImage from "../../assets/background.jpg";
 
 const PreLoader = () => {
   // selections here
@@ -290,11 +291,7 @@ const PreLoader = () => {
       <div className="nsu-tech-fest" ref={nsuTechFest}>
         NSU TechFest 2.0
       </div>
-      <img
-        className="imageImg"
-        src="/src/assets/background.jpg"
-        ref={imageImg}
-      />
+      <img className="imageImg" src={preloaderImage} ref={imageImg} />
     </div>
   );
 };
