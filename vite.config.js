@@ -4,6 +4,9 @@ import svgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    host: true,
+  },
   plugins: [
     react({
       babel: {
@@ -13,11 +16,13 @@ export default defineConfig({
             {
               displayName: true,
               fileName: false,
+              
             },
           ],
         ],
       },
     }),
     svgr(),
+    
   ],
 });
