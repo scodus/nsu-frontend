@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 const index = () => {
   return (
     <>
-      <div className="home-bg-copy exhibition-bg-copy">
+      <div className="home-bg-copy exhibition-bg-copy bg-top-mobile ">
         <div className="home-wrapper">
           {/* <div className="home-main-title linear-wipe">Exhibition</div> */}
         </div>

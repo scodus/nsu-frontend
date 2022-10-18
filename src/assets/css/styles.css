@@ -209,6 +209,10 @@ label {
         gap: 1rem;
     }
 
+    .footer-link-container a{
+        text-decoration: none;
+    }
+
     .footer-event-information{
         display: flex;
         gap: 2rem;

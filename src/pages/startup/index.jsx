@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 const index = () => {
   return (
     <>
-      <div className="home-bg-copy startup-bg-copy">
+      <div className="home-bg-copy startup-bg-copy bg-right-mobile">
       </div>
       <div className="home-bg">
         <div className="home-wrapper wrapper-management-200">

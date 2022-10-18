@@ -7,16 +7,7 @@ function StartUpIdeas() {
       <div className="big-container">
         <  h1 className="text-center h1-height h1-small">Start UP Ideas</h1>
         <p className=" text-center p-height extra-padding-container color-brown">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
-          tenetur cupiditate ut adipisci quod deserunt doloremque commodi!
-          Architecto quos totam tempore omnis sit dignissimos velit. Maxime
-          accusantium soluta blanditiis voluptates aperiam tempore voluptatum
-          tenetur nobis corrupti quaerat. Natus aperiam culpa veritatis a
-          perspiciatis quaerat deserunt, maxime incidunt consequuntur ipsum
-          facilis, dicta, laboriosam dolorum nam voluptatum saepe repudiandae
-          excepturi cupiditate nemo illo rerum doloribus accusantium
-          quibusdam! Nulla atque culpa sapiente accusamus. Repellendus illum
-          ducimus porro mollitia nobis deleniti labore doloremque recusandae.
+          The term startup refers to a company in the first stages of operations. Startups are founded by one or more entrepreneurs who want to develop a product or service for which they believe there is demand.
         </p>
       </div>
 

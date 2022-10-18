@@ -14,10 +14,12 @@ const HomePage = () => {
 
   return (
     <HomeParent>
-      {!location?.state?.clicked && <PreLoader />}
+      {/* {!location?.state?.clicked && <PreLoader />} */}
       {/* Hero Section */}
 
-      <Header />
+      {/* <PreLoader /> */}
+
+      <Header className="bg-center-mobile" />
       <div className="home-main-title linear-wipe linear-wipe-home-page">
         <motion.h1 initial = {{opacity:0}} animate = {{opacity:1}}  transition={{ delay : 0.30,duration : 0.75}} className="exhibition-h1"> NSU TECHFEST 2.0 </motion.h1>
       </div>

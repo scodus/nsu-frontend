@@ -101,7 +101,19 @@
     .robo-war-bg-mobile{
         background-position: top right;
     }
-    
+    .bg-center-mobile{
+        background-position: center !important;
+    }
+
+    .bg-right-mobile{
+        background-position: right;
+    }
+
+    .bg-top-mobile{
+        background-position: top;
+    }
+
+
     .robo-war-h1-mobile{
         display: block;
     }

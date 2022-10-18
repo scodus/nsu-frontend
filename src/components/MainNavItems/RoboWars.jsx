@@ -7,14 +7,7 @@ function RoboWars() {
       <div className="big-container">
         <h1 className="h1-height">ROBOWAR</h1>
         <p className="p-height extra-padding-right-container font-size-20 color-brown">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-          quisquam asperiores sed voluptatem tenetur earum voluptatibus nemo,
-          suscipit enim non iusto ad alias laudantium labore amet, sapiente
-          officiis odit? Error alias id, iste voluptatibus blanditiis magni
-          hic nam autem aspernatur cupiditate animi corrupti, illo, aliquam
-          reprehenderit voluptas earum. Accusantium unde facere, corporis
-          explicabo consectetur debitis dolores eos doloribus repudiandae
-          quaerat!
+        War waged by intelligent machines conducted by humans ensconced in bunkers or roaming from stand-off command centers at sea or in air can alter the face of the battlefield.
         </p>
       </div>
 

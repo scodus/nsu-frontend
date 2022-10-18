@@ -9,81 +9,81 @@ const PreLoader = () => {
   const nsuTechFest = useRef();
   const loaderRef = useRef();
 
-  useEffect(() => {
-    let animation = gsap.timeline();
+  // useEffect(() => {
+  //   let animation = gsap.timeline();
 
-    // animation 1
-    animation.to(imageCurtain.current, {
-      ease: "power2.easeIn",
-      duration: 2.5,
-      transform: "scale(4)",
-      opacity: 0,
-      display: "none",
-      delay: 3,
-    });
+  //   // animation 1
+  //   animation.to(imageCurtain.current, {
+  //     ease: "power2.easeIn",
+  //     duration: 2.5,
+  //     transform: "scale(4)",
+  //     opacity: 0,
+  //     display: "none",
+  //     delay: 3,
+  //   });
 
-    // animation 2
-    animation.to(
-      imageImg.current,
-      {
-        top: "0vh",
-        ease: "power2.easeIn",
-        transform: "scale(1)",
-        duration: 2,
-      },
-      "<"
-    );
+  //   // animation 2
+  //   animation.to(
+  //     imageImg.current,
+  //     {
+  //       top: "0vh",
+  //       ease: "power2.easeIn",
+  //       transform: "scale(1)",
+  //       duration: 2,
+  //     },
+  //     "<"
+  //   );
 
-    // animation 3
-    animation.to(
-      imageImg.current,
-      {
-        top: "0vh",
-        // opacity: "scale(0.5)",
-        ease: "power4.easeInOut",
-        zIndex: 30,
-        transform: "scale(4)",
-        opacity: 0,
-        duration: 9,
-        delay: 1.5,
-        display: "none",
-      },
-      "-=0.56"
-    );
+  //   // animation 3
+  //   animation.to(
+  //     imageImg.current,
+  //     {
+  //       top: "0vh",
+  //       // opacity: "scale(0.5)",
+  //       ease: "power4.easeInOut",
+  //       zIndex: 30,
+  //       transform: "scale(4)",
+  //       opacity: 0,
+  //       duration: 9,
+  //       delay: 1.5,
+  //       display: "none",
+  //     },
+  //     "-=0.56"
+  //   );
 
-    //  animation 4
-    animation.to(
-      nsuTechFest.current,
-      {
-        transform: "translateY(82vh)",
-        duration: 2,
-      },
-      "-=12"
-    );
+  //   //  animation 4
+  //   animation.to(
+  //     nsuTechFest.current,
+  //     {
+  //       transform: "translateY(82vh)",
+  //       duration: 2,
+  //     },
+  //     "-=12"
+  //   );
 
-    // animation 5
-    animation.to(
-      nsuTechFest.current,
-      {
-        transform: "translateY(50vh) scale(0.5)",
+  //   // animation 5
+  //   animation.to(
+  //     nsuTechFest.current,
+  //     {
+  //       transform: "translateY(50vh) scale(0.5)",
 
-        duration: 3,
-        color: "#54aedc",
-      },
-      "-=9"
-    );
+  //       duration: 3,
+  //       color: "#54aedc",
+  //     },
+  //     "-=9"
+  //   );
 
-    // animation 6
-    animation.to(
-      loaderRef.current,
-      {
-        opacity: 0,
-        display: "none",
-        duration: 3.5,
-      },
-      "-=9"
-    );
-  }, []);
+  //   // animation 6
+  //   animation.to(
+  //     loaderRef.current,
+  //     {
+  //       opacity: 0,
+  //       display: "none",
+  //       duration: 3.5,
+  //     },
+  //     "-=9"
+  //   );
+  // }, []);
 
   return (
     <div className="image" ref={loaderRef}>
