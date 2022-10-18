@@ -49,7 +49,7 @@
   height: 100%;
   background-color: #1b1711;
   z-index: 1200;
-  top: 0;
+  /* top: 0; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -59,6 +59,7 @@
   opacity: 1;
   background-position: center;
   transform-origin: 25% 40%;
+
   /* display: none; */
   /* -------------------------------------------------- HERE */
 }
@@ -152,15 +153,14 @@
   font-family: "grave";
   letter-spacing: 5px;
   color: #eb3572;
-  /* transform: translateY(00px); */
+  transform: translateY(100vh);
   font-size: 50px;
   position: absolute;
-  bottom: -700px;
+  /* bottom: -700px; */
   z-index: 1170;
   left: 0;
   right: 0;
   text-align: center;
-  /* margin-left: 40px; */
 }
 
 .social-div {
@@ -398,6 +398,8 @@
 @media screen and (max-width: 500px) {
   .image-curtain {
     background-position: right;
+
+    transform-origin: 50% 35%;
   }
 
   .loader {

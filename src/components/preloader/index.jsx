@@ -14,9 +14,9 @@ const PreLoader = () => {
 
     // animation 1
     animation.to(imageCurtain.current, {
-      ease: "circle.easeOut",
+      ease: "power2.easeIn",
       duration: 2.5,
-      scale: 4,
+      transform: "scale(4)",
       opacity: 0,
       display: "none",
       delay: 3,
@@ -27,11 +27,11 @@ const PreLoader = () => {
       imageImg.current,
       {
         top: "0vh",
-        ease: "power4.easeInOut",
-        scale: 1,
+        ease: "power2.easeIn",
+        transform: "scale(1)",
         duration: 2,
       },
-      "-=2.1"
+      "<"
     );
 
     // animation 3
@@ -42,7 +42,7 @@ const PreLoader = () => {
         // opacity: "scale(0.5)",
         ease: "power4.easeInOut",
         zIndex: 30,
-        scale: 4,
+        transform: "scale(4)",
         opacity: 0,
         duration: 9,
         delay: 1.5,
@@ -55,7 +55,7 @@ const PreLoader = () => {
     animation.to(
       nsuTechFest.current,
       {
-        bottom: "60px",
+        transform: "translateY(82vh)",
         duration: 2,
       },
       "-=12"
@@ -65,7 +65,7 @@ const PreLoader = () => {
     animation.to(
       nsuTechFest.current,
       {
-        transform: "translateY(-250px) scale(0.5)",
+        transform: "translateY(50vh) scale(0.5)",
 
         duration: 3,
         color: "#54aedc",
