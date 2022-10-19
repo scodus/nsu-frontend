@@ -10,7 +10,7 @@ const bodyContainer = {
 
 function Sponser() {
   return (
-    <div className='other-body-container' style={bodyContainer}>
+    <div className='other-body-container min-height-70' style={bodyContainer}>
       <div className="team-member">
       <div className="team-member-title text-center">
                     <h1 className='color-white h1-small font-family-gravedigger' style={{ paddingBottom: '1.1rem' }}>OUR SPONSERS</h1>

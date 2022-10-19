@@ -52,7 +52,7 @@ function Contact() {
 
   return (
     <>
-      <div style={{ background: "#131324" }} className="other-body-container">
+      <div style={{ background: "#131324" }} className="other-body-container contact-form-containers">
         <div className="contact-form-page-container">
           <div className="contact-left">
             <h1 className='h1-small color-white'>WE'D LOVE TO HEAR FROM YOU</h1>

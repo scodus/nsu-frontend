@@ -31,13 +31,12 @@ const EventSection = () => {
   return (
     <EventArea className="event-area-mobile">
       <EventLeft className="event-left-mobile">
-        <EventHeading>All Our Events</EventHeading>
+        <EventHeading className="event-heading-div"><h1 className="font-family-gravedigger event-headings">All Our Events </h1></EventHeading>
         <EventDescription>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. At lacus
-          risus elit, amet. Risus amet, vulputate eros praesent.
+          Tech Fest has a lot of Events including Hackathon, Robo Wars, Start Up and many more.
         </EventDescription>
         <Link to="/events">
-          <EventButton>
+          <EventButton className="event-button-mobile">
             see more
           </EventButton>
         </Link>
@@ -48,7 +47,7 @@ const EventSection = () => {
           <EventRightImage1Parent>
             <EventRightImage1ChildrenContainer>
               <EventRightImage src={Event1} />
-              <EventImageOverlay>robo war</EventImageOverlay>
+              <EventImageOverlay><h1 className="font-size-25">robo war</h1></EventImageOverlay>
             </EventRightImage1ChildrenContainer>
             <EventRightBlur src={Event1Bg} />
           </EventRightImage1Parent>
@@ -58,7 +57,7 @@ const EventSection = () => {
           <EventRightImage2Parent>
             <EventRightImage2ChildrenContainer>
               <EventRightImage src={Event3} />
-              <EventImageOverlay>startup</EventImageOverlay>
+              <EventImageOverlay><h1 className="font-size-25">startup </h1></EventImageOverlay>
             </EventRightImage2ChildrenContainer>
             <EventRightRightBlur src={Event3Bg} />
           </EventRightImage2Parent>
@@ -68,7 +67,7 @@ const EventSection = () => {
           <EventRightImage1Parent>
             <EventRightImage1ChildrenContainer>
               <EventRightImage src={Event2} />
-              <EventImageOverlay>hackathon</EventImageOverlay>
+              <EventImageOverlay><h1 className="font-size-25">hackathon </h1></EventImageOverlay>
             </EventRightImage1ChildrenContainer>
             <EventRightBlur src={Event2Bg} />
           </EventRightImage1Parent>
@@ -78,7 +77,7 @@ const EventSection = () => {
         <EventRightImage2Parent>
           <EventRightImage2ChildrenContainer>
             <EventRightImage src={Event4} />
-            <EventImageOverlay>exhibition</EventImageOverlay>
+            <EventImageOverlay><h1 className="font-size-25">exhibition </h1></EventImageOverlay>
           </EventRightImage2ChildrenContainer>
           <EventRightRightBlur src={Event4Bg} />
         </EventRightImage2Parent>

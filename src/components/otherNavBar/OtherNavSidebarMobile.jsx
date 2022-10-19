@@ -150,6 +150,18 @@ function OtherNavSidebarMobile({ isBurger, setBurger }) {
                       SPONSERS
                     </NavLink>
                   </li>
+
+                  <li onClick={HamBurgerHandler}>
+                    <NavLink
+                      to="/contact"
+                      style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                    >
+                      {" "}
+                      CONTACTS
+                    </NavLink>
+                  </li>
                 </ul>
               </div>
             </div>

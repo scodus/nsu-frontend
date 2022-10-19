@@ -4,17 +4,13 @@ import GuestSection from "./GuestSection";
 import EventSection from "./EventSection";
 import StartingDate from "./StartingDate";
 import SponsorSection from "./SponsorSection";
-import { useRef } from "react";
-import { useLocation } from "react-router-dom";
 import {motion} from 'framer-motion'
 
 const HomePage = () => {
-  const location = useLocation();
-  const eventRef = useRef(null);
 
   return (
     <HomeParent>
-      {!location?.state?.clicked && <PreLoader />}
+      {/* {!location?.state?.clicked && <PreLoader />} */}
       {/* Hero Section */}
 
       {/* <PreLoader /> */} 
