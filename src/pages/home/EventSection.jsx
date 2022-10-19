@@ -47,7 +47,7 @@ const EventSection = () => {
           <EventRightImage1Parent>
             <EventRightImage1ChildrenContainer>
               <EventRightImage src={Event1} />
-              <EventImageOverlay><h1 className="font-size-25">robo war</h1></EventImageOverlay>
+              <EventImageOverlay><h1 className="font-size-20">robo war</h1></EventImageOverlay>
             </EventRightImage1ChildrenContainer>
             <EventRightBlur src={Event1Bg} />
           </EventRightImage1Parent>
@@ -57,7 +57,7 @@ const EventSection = () => {
           <EventRightImage2Parent>
             <EventRightImage2ChildrenContainer>
               <EventRightImage src={Event3} />
-              <EventImageOverlay><h1 className="font-size-25">startup </h1></EventImageOverlay>
+              <EventImageOverlay><h1 className="font-size-20">startup </h1></EventImageOverlay>
             </EventRightImage2ChildrenContainer>
             <EventRightRightBlur src={Event3Bg} />
           </EventRightImage2Parent>
@@ -67,7 +67,7 @@ const EventSection = () => {
           <EventRightImage1Parent>
             <EventRightImage1ChildrenContainer>
               <EventRightImage src={Event2} />
-              <EventImageOverlay><h1 className="font-size-25">hackathon </h1></EventImageOverlay>
+              <EventImageOverlay><h1 className="font-size-20">hackathon </h1></EventImageOverlay>
             </EventRightImage1ChildrenContainer>
             <EventRightBlur src={Event2Bg} />
           </EventRightImage1Parent>
@@ -77,7 +77,7 @@ const EventSection = () => {
         <EventRightImage2Parent>
           <EventRightImage2ChildrenContainer>
             <EventRightImage src={Event4} />
-            <EventImageOverlay><h1 className="font-size-25">exhibition </h1></EventImageOverlay>
+            <EventImageOverlay><h1 className="font-size-20">exhibition </h1></EventImageOverlay>
           </EventRightImage2ChildrenContainer>
           <EventRightRightBlur src={Event4Bg} />
         </EventRightImage2Parent>
