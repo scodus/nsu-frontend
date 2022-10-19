@@ -221,7 +221,8 @@
   font-family: "grave";
   color: #54aedc;
   letter-spacing: 5px;
-  margin-left: 23%;
+  margin-left: 18%;
+  text-align: center;
 }
 
 
@@ -238,7 +239,7 @@
   }
 
   .loader-title {
-    margin-left: 40%;
+    margin-left: 8%;
   }
 }
 
@@ -246,6 +247,9 @@
   .loader {
     margin-left: 13%;
     margin-top: -4vh;
+  }
+  .loader-title {
+    margin-left: 22%;
   }
 }
 
@@ -265,7 +269,9 @@
     margin-top: 0px;
     z-index: 54;
   }
-
+  .loader-title {
+    margin-left: 10%;
+  }
   .image-curtain {
     justify-content: flex-start;
     align-items: center;

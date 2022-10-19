@@ -26,21 +26,21 @@ const GuestSection = () => {
             <Hexagon className="images-items-mobile">
               <StyledImage src={Post} />
             </Hexagon>
-            <HexagonText>Post Lama</HexagonText>
+            <HexagonText className="guest-text">Post Lama</HexagonText>
           </HexagonParent>
 
           <HexagonParent className="guest-images-details">
             <Hexagon className="images-items-mobile">
               <StyledImage src={Alesso} />
             </Hexagon>
-            <HexagonText>Alesso kumar</HexagonText>
+            <HexagonText className="guest-text">Alesso kumar</HexagonText>
           </HexagonParent>
 
           <HexagonParent className="guest-images-details">
             <Hexagon className="images-items-mobile">
               <StyledImage src={Henri} />
             </Hexagon>
-            <HexagonText>G Eazy</HexagonText>
+            <HexagonText className="guest-text">G Eazy</HexagonText>
           </HexagonParent>
 
           <HexagonParent className="guest-images-details">

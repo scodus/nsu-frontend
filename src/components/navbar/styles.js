@@ -11,7 +11,7 @@ const NavbarParent = styled.div`
   justify-content: space-between;
   padding: 25px 100px;
   color: #fff;
-  z-index: 1;
+  z-index : 1;
 `;
 
 const NavbarMobileParent = styled.div`

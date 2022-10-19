@@ -1,128 +1,33 @@
-@media only screen and (max-width: 759px) {
-
-    html {
-        font-size: 44.5% !important;
-    }
-
-    .big-container {
-        padding: 14.4rem 4rem;
-    }
-
-    .extra-padding-container {
-        padding: 0rem;
-    }
-
-    .small-container {
-        padding: 8.2rem 4rem;
-
-    }
-
-    .other-body-container {
-        padding: 10rem 4rem !important;
-    }
-
-    .extra-padding-right-container {
-        padding-right: 3rem;
-    }
-
-    /* form contacts section of all pages */
-
-    .form-inputs {
-        grid-template-columns: repeat(1, auto);
-    }
-
-    .form-inputs .form--input input,
-    .form-inputs .form--input textarea {
-        width: 90%;
-    }
-
-    .form--input {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .form-inputs .btn {
-        text-align: center;
-    }
-
-    .full-width {
-        grid-column: 1;
-    }
-
-    /* for contact pages */
-    .contact-form-page-container {
-        flex-direction: column;
-    }
-
-    .contact-left {
-        width: 100%;
-        padding: 3rem;
-    }
-
-    .contact-right {
-        width: 100%;
-        padding: 3rem;
-    }
-
-    .contact-form-button {
-        text-align: center;
-    }
-
-
-    /* for events */
-
-    
-    .event-container .event-items {
-        flex-direction: column !important;
-    }
-
-    /* panel */
-
-
-    .team-member-title {
-        padding: 0;
-    }
-
-    .team-member-information{
-        justify-content: center;
-    }
-
-    .footer-mobile{
-        flex-direction: column;
-        gap: 3rem;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 2rem 5rem !important;
-    }
-
-    /* robowars  */
-    .robo-war-bg-mobile{
-        background-position: top right;
-    }
-    .bg-center-mobile{
-        background-position: center !important;
-    }
-
-    .bg-right-mobile{
-        background-position: right;
-    }
-
-    .bg-top-mobile{
-        background-position: top;
-    }
-
-
-    .robo-war-h1-mobile{
-        display: block;
+@media only screen and (min-width : 1201px) and (max-width : 1700px){
+    .linear-wipe-home-page{
+        top: 45%;
     }
 }
+
+
 
 @media only screen and (max-width : 1200px) {
     .navbar-desktop {
         display: none !important;
     }
+
+    .event-heading-div {
+        width: 100% !important;
+    }
+
+    .start-up-h1 {
+        font-size: 5rem;
+    }
+
+    .exhibition-h1 {
+        font-size: 5rem;
+    }
+
+
+    .bg-center-mobile {
+        background-position: center !important;
+    }
+
 
     html {
         font-size: 54.5% !important;
@@ -158,17 +63,20 @@
         justify-content: space-between;
         padding: 25px 100px;
         color: #fff;
-        padding: 5rem;
+        padding: 2.5rem 3.5rem;
+        z-index: 1;
 
     }
 
-    .navbar-mobile>img {
-        width: 60px !important;
+    .navbar-mobile img {
+        width: 6.5rem !important;
         height: auto;
     }
 
     .nav-burger-items-container {
         width: 100% !important;
+        min-height: 100vh;
+        height: auto !important;
     }
 
     .close-Navburger {
@@ -179,6 +87,12 @@
         font-size: 2rem;
     }
 
+    /* homepage */
+    .linear-wipe-home-page {
+        top: 34%;
+    }
+
+
     /* guests */
 
     .space-between-mobile {
@@ -188,7 +102,7 @@
         gap: 4rem;
     }
 
-    
+
 
     .space-between-mobile svg {
         display: none;
@@ -198,11 +112,11 @@
         position: static;
     }
 
-    .space-between-mobile > div {
+    .space-between-mobile>div {
         all: unset;
     }
 
-    .guest-images-items-container-mobile{
+    .guest-images-items-container-mobile {
         display: flex !important;
         flex-wrap: wrap !important;
         gap: 2rem !important;
@@ -211,13 +125,11 @@
         margin: 0 4rem !important;
     }
 
-    .guest-images-details{
+    .guest-images-details {
         margin: 0 !important;
     }
 
-    .guest-text{
-        font-size: clamp(1rem,1.1vw, 1.2rem) !important;
-    }
+   
 
     .space-between-mobile img {
         width: 13rem;
@@ -227,45 +139,317 @@
 
 
     /* events */
-    .event-area-mobile{
+    .event-area-mobile {
         flex-direction: column;
         padding: 6rem !important;
         margin-bottom: 10rem !important;
+        margin-top: 7rem !important;
     }
 
-    .event-left-mobile{
+    .event-left-mobile {
         max-width: 100% !important;
-        margin-bottom: 10rem;
+        margin-bottom: 14rem;
     }
 
-    /* date */
-    /* .starting-date-text-mobile{
-        position: static !important;
-    } */
+    .starting-date-text-mobile {
+        width: 60% !important;
+    }
 
-    .date-h1-mobile{
-        font-size: clamp(2rem,2.5vw,2.5rem) !important;
+    .date-h1-mobile {
+        font-size: clamp(2rem, 2.5vw, 2.5rem) !important;
         color: white !important;
     }
 
-    .date-parent-mobile{
-        height : 60vh !important;
+    .date-parent-mobile {
+        height: 40vh !important;
     }
 
-    .date-image-mobile{
+    .date-image-mobile {
         height: inherit !important;
     }
 
     /* sponser */
 
-    .sponser-partner-mobile{
+    .sponser-partner-mobile {
         flex-wrap: wrap;
         height: auto !important;
-        padding: 10rem 0 !important;
+        padding: 8rem 0 !important;
     }
 
-   
-   
+    .sponser-partner-mobile img {
+        width: 15rem !important;
+        height: auto;
+    }
 
+    .guest-text {
+        font-size: clamp(1rem, 1.1vw, 1.2rem) !important;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 759px) {
+
+    html {
+        font-size: 44.5% !important;
+    }
+
+    .date-parent-mobile {
+        height: 40vh !important;
+    }
+
+    .big-container {
+        padding: 11.4rem 4rem;
+    }
+
+    .extra-padding-container {
+        padding: 0rem;
+    }
+
+    .small-container {
+        padding: 8.2rem 4rem;
+    }
+
+    .other-body-container {
+        padding: 10rem 4rem !important;
+        min-height: 100vh;
+    }
+
+    .extra-padding-right-container {
+        padding-right: 3rem;
+    }
+
+    .sponser-content-container {
+        height: auto;
+    }
+
+    .event-button-mobile {
+        width: 19rem !important;
+        height: 6.5rem !important;
+    }
+
+
+    /* font-size */
+
+    p {
+        font-size: 1.7rem;
+        color: #D9D9D9;
+        font-family: 'Montserrat Alternates';
+    }
+
+    h1 {
+        font-size: 3.4rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    ul li {
+        font-size: 1.8rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .font-size-20 {
+        font-size: 1.9rem;
+    }
+
+    .font-size-15 {
+        font-size: 1.4rem;
+    }
+
+    .font-size-12 {
+        font-size: 1.1rem;
+    }
+
+    .font-size-10 {
+        font-size: 0.9rem;
+    }
+
+    .font-size-25 {
+        font-size: 2.5rem;
+    }
+
+    .font-size-40 {
+        font-size: 3.9rem;
+    }
+
+    .h1-small {
+        font-size: 2.9rem;
+    }
+
+    /* navbar */
+    .navbar-mobile {
+        padding: 4.4rem;
+    }
+
+    .navbar-mobile img {
+        width: 7.5rem !important;
+    }
+
+    /* form contacts section of all pages */
+
+    .form-inputs {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 2rem;
+    }
+
+    .form-inputs .form--input input,
+    .form-inputs .form--input textarea {
+        width: 100%;
+        padding: 1.1rem 1.6rem;
+    }
+
+    .form--input {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form-inputs .btn {
+        text-align: right;
+    }
+
+    .form-inputs .btn button {
+        padding: 1.3rem 2.3rem;
+    }
+
+    .full-width {
+        grid-column: 1;
+    }
+
+    /* for contact pages */
+    .contact-form-page-container {
+        flex-direction: column;
+        margin: 5rem 0;
+    }
+
+    .contact-form-containers {
+        min-height: 0;
+    }
+
+    .contact-left {
+        width: 100%;
+        padding: 5rem 5rem;
+    }
+
+    .contact-right {
+        width: 100%;
+        padding: 5rem;
+    }
+
+    .contact-right form input,
+    textarea {
+        width: 100%;
+    }
+
+    .contact-form-button {
+        text-align: left;
+    }
+
+
+    /* for events */
+
+    .event-container { 
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .event-container .event-items {
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .event-items .event-items-details{
+        text-align: center !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .event-container .event-items:nth-child(2n) .event-items-details{
+        text-align: center !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        align-items : center !important;
+        justify-content: center !important;
+    }
+
+    /* panel */
+
+
+    .team-member-title {
+        padding: 0;
+    }
+
+    .team-member-information {
+        justify-content: center;
+    }
+
+    .footer-mobile {
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2rem 5rem !important;
+    }
+
+    /* robowars  */
+    .robo-war-bg-mobile {
+        background-position: top right;
+    }
+
+    .bg-center-mobile {
+        background-position: center !important;
+    }
+
+    .bg-right-mobile {
+        background-position: right;
+    }
+
+    .bg-top-mobile {
+        background-position: top;
+    }
+
+
+    .robo-war-h1-mobile {
+        display: block;
+    }
+
+    .footer-link-container a {
+        font-size: 1.3rem;
+    }
+
+    .sponser-partner-mobile {
+        padding: 5rem !important;
+    }
+
+    .sponser-partner-mobile img {
+        width: 13rem !important;
+        height: auto;
+    }
+
+    .event-headings {
+        font-size : 3rem;
+    }
+
+    .home-bg-copy { 
+        height: 60vh;
+    }
+
+    .home-bg{
+        height : 60vh;
+    }
+   
 
 }

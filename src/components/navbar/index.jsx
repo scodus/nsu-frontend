@@ -12,6 +12,9 @@ import { ReactComponent as MenuIcon } from "./../../assets/hamburger.svg";
 import { useLocation } from "react-router-dom";
 import NavBarMobile from "../otherNavBar/NavBarMobile";
 import NSULOGO from "./../../assets/nsuLogo.png";
+import { useEffect } from "react";
+
+let isIndex = false;
 
 const Navbar = ({setBurger, setMobileBurger}) => {
   const { pathname } = useLocation();
@@ -25,15 +28,13 @@ const Navbar = ({setBurger, setMobileBurger}) => {
   const BurgerButtonHandler = () => {
     setBurger(true);
   }
-
-
-
+  
   return (
     <>
       <NavBarMobile setMobileBurger = {setMobileBurger}>
       </NavBarMobile>
 
-        <NavbarParent className="navbar-desktop">
+        <NavbarParent className="navbar-desktop" >
           <Icon onClick={BurgerButtonHandler}>
             <MenuIcon />
           </Icon>

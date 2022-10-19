@@ -16,6 +16,7 @@ import EventPage from "./pages/events";
 import { AnimatePresence } from 'framer-motion';
 import Privacy from "./pages/privacy/Privacy";
 import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
+import PreLoader from "./components/preloader";
 
 function App() {
   const navigate = useNavigate();
@@ -23,8 +24,12 @@ function App() {
     navigate({ state: null });
   }, []);
   const location = useLocation();
+  const { pathname } = location;
   return (
     <div>
+       {pathname === '/' && !location?.state?.clicked &&
+        <PreLoader />
+      }
       <AnimatePresence exitBeforeEnter>
         <Routes key={location.pathname} location = {location}>
           {/* layout wrapper  */}

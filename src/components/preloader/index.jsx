@@ -284,12 +284,12 @@ const PreLoader = () => {
             </g>
           </svg>
           <div>
-            <h2 className="loader-title">NSU TECHFEST</h2>
+            <h2 className="loader-title">NSU TECHFEST 2022</h2>
           </div>
         </div>
       </div>
       <div className="nsu-tech-fest" ref={nsuTechFest}>
-        NSU TechFest 2.0
+        NSU TechFest 2022
       </div>
       <img className="imageImg" src={preloaderImage} ref={imageImg} />
     </div>

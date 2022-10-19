@@ -30,6 +30,15 @@
 .navbar-mobile{
     display: none;
 }
+.d-mobile{
+    display: block;
+}
+@media screen and (max-width: 768px){
+    .d-mobile{
+        display: none;
+    }
+}
+
 
 /* fonts */
 
@@ -114,19 +123,18 @@ label {
 }
 
 .start-up-h1{
-    font-size: clamp(4rem,6vw,6rem);    
+    font-size: clamp(5rem,6vw,6rem);    
     text-align: left;
     margin-left: 10.7rem;
 }
 
 .exhibition-h1{
-    font-size: clamp(4rem,6vw,6rem);
+    font-size: clamp(5rem,6vw,6rem);
 }
 
 .wrapper-management-200{
     padding-top: 200px;
 }
-
 
 /* fonts heights and structure */
 .p-height {
@@ -597,4 +605,11 @@ textarea {
     height: 100%;
     align-items: center;
     justify-content: center;
+}
+
+.start-up-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0rem;
 }

@@ -1,13 +1,15 @@
-import React from 'react'
-import AllPageContact from './AllPageContact'
+import React from "react";
+import AllPageContact from "./AllPageContact";
 
 function Hackathon() {
   return (
     <div className="other-container">
       <div className="big-container">
-        <h1 className="text-center h1-height h1-small">HACKATHON</h1>
+        <h1 className="text-center h1-height h1-small   d-mobile">HACKATHON</h1>
         <p className=" text-center p-height extra-padding-container">
-          A hackathon, also known as a codefest, is a social coding event that brings computer programmers and other interested people together to improve upon or build a new software program.
+          A hackathon, also known as a codefest, is a social coding event that
+          brings computer programmers and other interested people together to
+          improve upon or build a new software program.
         </p>
       </div>
 
@@ -20,9 +22,8 @@ function Hackathon() {
         </ul>
       </div>
       <AllPageContact />
-
     </div>
-  )
+  );
 }
 
-export default Hackathon
+export default Hackathon;
